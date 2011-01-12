@@ -15,9 +15,9 @@
 	$localVersion = false;
 	
 	# Define these here, or in _projectCommon.php for site-wide values
-	$pageKeywords	= "eclipse, project";
-	$pageAuthor		= "Your name";
-	$pageTitle 		= "My project home";
+	$pageKeywords	= "eclipse, project, EMF, EMFStore, Store, Model, Repository";
+	$pageAuthor		= "Jonas Helming";
+	$pageTitle 		= "EMFStore project home";
 	
 	
 	// 	# Paste your HTML content between the EOHTML markers!
