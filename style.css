@@ -1,180 +1,189 @@
-#bigbuttons {
-	position: relative;
-	left: 689px;
-	top: -187px;
-	width: 226px;
-	padding: 0;
+@CHARSET "UTF-8";
+#novaContent {
+	background: url("images/backgroundMain.png") no-repeat white;
+}
+
+#midcolumn {
+	width: 640px;
+	padding: 0 10px 10px 10px;
+}
+
+#rightcolumn {
+	width: 260px;
 }
 
 
+h3 {
+	clear: both;
+}
+
+h7 {
+	font-weight: bold;
+	padding: 5px;
+}
+
+a strong {
+	text-decoration: underline;
+}
+
+
+#novaContent {
+	background: url("images/backgroundMain.png") no-repeat white;
+	padding-top: 170px;
+}
+
+#introText p.left {
+	width: 48%;
+	float: left;
+}
+
+#introText p.right {
+	width: 48%;
+	float: right;
+}
+
+#feature_1 {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+}
+
+#feature_2 {
+	float: left;
+	width: 30%;
+	margin-right: 3%
+}
+
+#feature_3 {
+	float: left;
+	width: 30%;
+}
+
+#feature_4 {
+	clear: both;
+	float: left;
+	width: 63%;
+	margin-right: 3%;	
+}
+
+#feature_more {
+	float: left;
+	width: 30%;
+}
+	
+#bigbuttons {
+	position: relative;
+	left: 420px;
+	top: -170px;
+}
+#bigbuttons h3{
+	visibility: hidden;
+}
+
 #bigbuttons a {
-   display: block;
-   height:45px;
-   width:226px;
+}
+
+#bigbuttons ul li {
+   display:block;
+   list-style-type:none;
+   background-color: red;
    padding: 0;
    margin: 0;
+}
+
+#bigbuttons a:hover {
+	text-decoration: none;
+}
+
+#bigbuttons a {
+   display: block;
+   height:77px; width:250px;
+   padding: 0;
+   margin: 20px;
    text-indent: -9000px;
    position: absolute;
 }
 
 #buttonDownload {
-	background:transparent url("images/bigbuttonDownload.png") no-repeat top;
-	top: 0px;
-	left: 0px;
+   background:transparent url("images/buttonDownload.png") no-repeat 0 0;
+   top: 0px;
+   left: 0px;
 }
 
 #buttonDownload:hover {
-   background:transparent url("images/bigbuttonDownload.png") no-repeat bottom;
+   background:transparent url("images/buttonDownload_sel.png") no-repeat 0 0;
 }
 
+   
 #buttonDocumentation {
-	background:transparent url("images/bigbuttonDocumentation.png") no-repeat top;
-	top: 55px;
-	left: 0px;
+   background:transparent url("images/buttonDocumentation.png") no-repeat 0 0;
+   top: 87px;
+   left: 0px;
 }
 
 #buttonDocumentation:hover {
-   background:transparent url("images/bigbuttonDocumentation.png") no-repeat bottom;
+   background:transparent url("images/buttonDocumentation_sel.png") no-repeat 0 0;
 }
 
 #buttonSupport {
-	background:transparent url("images/bigbuttonSupport.png") no-repeat top;
-	top: 110px;
-	left: 0px;
+   background:transparent url("images/buttonSupport.png") no-repeat 0 0;
+   top: 0px;
+   left: 280px;
 }
 
 #buttonSupport:hover {
-   background:transparent url("images/bigbuttonSupport.png") no-repeat bottom;
+   background:transparent url("images/buttonSupport_sel.png") no-repeat 0 0;
 }
 
-#midcolumn {
-	margin-left: 10px;
-	}
-
-div.feature div.featureDescription {
-	display: table-cell;
-	vertical-align: middle;
+#buttonInvolved {
+   background:transparent url("images/buttonInvolved.png") no-repeat 0 0;
+   top: 87px;
+   left: 280px;
 }
 
-div.feature a.featureScreencast {
-	display: table-cell;
-	vertical-align: middle;
+#buttonInvolved:hover {
+   background:transparent url("images/buttonInvolved_sel.png") no-repeat 0 0;
 }
 
-div.feature {
-	position: relative;
+#bigbuttons a * {
+	visibility: hidden;
 }
 
-div.feature a .overlay {
-	position: absolute;
-	top: 0px;
-	width: 250px;
-	height: 125px;
-	background: url("images/featurecastOverlay.png") no-repeat top;
+#headlines {
 }
 
-div.feature a .overlay:hover {
-	background: url("images/featurecastOverlay.png") no-repeat bottom;
+#headlines ul li {
+	margin: 0 0;
+	list-style-type: none;
+	list-style-image: none;
 }
 
-div.feature.imageLeft div.featureDescription {
-	padding-left: 20px;
-}	
-
-div.feature.imageRight div.featureDescription {
-	padding-right: 20px;
-}
-
-div.feature.imageRight div.featureDescription h4,
-div.feature.imageRight div.featureDescription p {
-	text-align: right;
-}
-
-div.feature {
-	background-repeat: no-repeat;
-	margin-top: 2em; 
-}
-
-div.feature.imageLeft {
-	background-position: left; 
-}
-
-div.feature.imageRight {
-	background-position: right; 
-}
-
-#screencast {
-	text-indent: -2000px;
-	display: block;
-	height: 112px;
-	background-color: red;
-	background: url("images/screencastPlaceholder.png") no-repeat center;
-	margin: 10px 0 30px 0;
-}
-
-#novaContent {
-	background: url("images/slider01.jpg") no-repeat white top;
-	padding-top: 210px;
-}
-
-#novaContent .headlines ul li {
-	list-style: none;
-	margin-left: 0;
 	
+#headlines div.title {
+	display: inline;
+	margin-right: 0.5em;
+}
+
+#headlines div.meta {
+	display: inline;
+	color: #444444;
+	font-size: smaller;  
+}
+
+#headlines div.item {
+	display: block;
+	}
+	
+#screencast {
+	margin-bottom: 10px;
 }
 
 #newAndNoteworthy a {
    display: block;
    width:218px; 
-   height:37px;
+   height:51px;
    padding: 0;
    text-indent: -9000px;
-   background:transparent url("images/buttonNewAndNoteworthy.png") no-repeat top;
+   background:transparent url("images/bannerNewAndNoteworthy08M4.png") no-repeat 0 0;
    margin-top: 10px;
-   margin-left: 3px;
-}
-
-#newAndNoteworthy a:hover {
-	background:transparent url("images/buttonNewAndNoteworthy.png") no-repeat bottom;
-}
-
-#introText {
-	margin-bottom: 3em;
-	position: relative;
-}
-
-#introText p {
-	display: table-cell;
-	vertical-align: top;
-	padding-right: 20px;
-}
-
-#introText div {
-	display: table-cell;
-	vertical-align: top;
-}
-
-#introText a div.overlay {
-	position: absolute;
-	top: 0px;
-	width: 250px;
-	height: 154px;
-	background: url("images/maincastOverlay.png") no-repeat top;
-}
-
-#introText .overlay:hover {
-	background: url("images/maincastOverlay.png") no-repeat bottom;
-}
-
-.headlines {
-	
-}
-
-.headlines .feed {
-	display:block;
-	float: right;
-	height: 14px;
-	width: 14px;
-	font-size: 0;
-	background: url("images/feed.png");
 }
