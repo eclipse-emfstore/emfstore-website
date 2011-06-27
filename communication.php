@@ -18,38 +18,33 @@
 
 <h3>Mailinglists and Newsgroup</h3>
 
-Since EMFStore is a Eclipse project, we have an <a ref="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
+<p>Since EMFStore is a Eclipse project, we have an <a ref="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
 
 If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, where all EMFStore framework developers are subscribed to:
 
-<a mailto:emfstore-dev@eclipse.org> emfstore-dev@eclipse.org </a>
+<a ref="mailto:emfstore-dev@eclipse.org"> emfstore-dev@eclipse.org </a>
+</p>
 
-We also have a mailinglist to announce news about the EMFStore such as new releases. You can subscribe here:
 
-[http://groups.google.com/group/emfstore http://groups.google.com/group/emfstore]
+<h3>Bug Reports and Feature Requests</h3>
 
-=== Bug Reports and Feature Requests ===
+You can report bugs and feature requests in the <a ref="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emf-store"> bugzilla of Eclipse</a>.
 
-You can report bugs and feature requests in the [https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emf-store bugzilla of Eclipse].
+Also you can report bugs and feature requests to the <a ref="mailto:emfstore-dev@eclipse.org"> developer mailinglist</a>.
 
-Also you can report bugs and feature requests to the [mailto:emfstore-dev@eclipse.org developer mailinglist].
-
-=== Twitter ===
+<h3>Twitter</h3>
 
 We announce import news such as releases on Twitter:
-http://twitter.com/emfstore
+<a ref="http://twitter.com/emfstore">http://twitter.com/emfstore</a>
 We always use the #emstore tag.
 
-=== Blog ===
 
-We write a blog were we announce news about the UNICASE project including the EMFStore and our experiences on technologies we use in EMFStore:
-http://unicase.blogspot.com
 
-=== Plain Email ===
+<h3>Plain Email</h3>
 
 Of course you can also send direct email to one of the project leads:
 
-[http://www1.in.tum.de/MaximilianKoegel http://unicase.googlecode.com/files/img_3999_small.jpg]
+
 
 [mailto:maximilian@emfstore.org Maximilian]
 
