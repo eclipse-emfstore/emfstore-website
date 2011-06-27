@@ -26,7 +26,7 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("MyProject", 	"/default");
-	$Nav->addCustomNav("Download", "/project/download.php", "_self", 3);
+	$Nav->addCustomNav("Download", "/project/downloads.php", "_self", 3);
 	$Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
 	$Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
 	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
