@@ -44,12 +44,12 @@ We always use the #emstore tag.
 
 Of course you can also send direct email to one of the project leads:
 
-
-
-[mailto:maximilian@emfstore.org Maximilian]
-
-<img src="http://unicase.googlecode.com/files/jonas.jpg" height =210 />
-
+</br>
+<img src="images/maximilian.jpg" height =210 />
+<a ref="mailto:maximilian@emfstore.org">Maximilian</a>
+</br>
+<img src="images/jonas.jpg" height =210 />
+<a ref="mailto:jonas@emfstore.org">Jonas</a>
 </p>
 
 
