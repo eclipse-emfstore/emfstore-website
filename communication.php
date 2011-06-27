@@ -42,14 +42,18 @@ We always use the #emstore tag.
 
 <h3>Plain Email</h3>
 
-Of course you can also send direct email to one of the project leads:
+<p>Of course you can also send direct email to one of the project leads:</p>
 
 </br>
+<p>
 <img src="images/maximilian.jpg" height =210 />
 <a ref="mailto:maximilian@emfstore.org">Maximilian</a>
+</p>
 </br>
+<p>
 <img src="images/jonas.jpg" height =210 />
 <a ref="mailto:jonas@emfstore.org">Jonas</a>
+</p>
 </p>
 
 
