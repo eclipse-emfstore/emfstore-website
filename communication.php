@@ -14,7 +14,7 @@
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
-<h2>How to get in contact with us or receive news about EMFStore</h3>
+<h2>How to get in contact with us or receive news about EMFStore</h2>
 
 <h3>Mailinglists and Newsgroup</h3>
 
