@@ -26,10 +26,10 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("MyProject", 	"/default");
-	$Nav->addCustomNav("Download", "/project/downloads.php", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/project/documentation.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/project/support.php", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/project/developers", "_blank", 3);
+	$Nav->addCustomNav("Download", "/emf-store/downloads.php", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/emf-store/documentation.php", "_blank", 3);
+	$Nav->addCustomNav("Support", "/emf-store/support.php", "_blank", 3);
+	$Nav->addCustomNav("Getting Involved", "/emf-store/developers", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "EMFStore, EMF, modeling, Eclipse, Model, Repository, CDO";
@@ -40,11 +40,11 @@
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
 	$Menu->setMenuItemList(array());
-	$Menu->addMenuItem("Home", "/project", "_self");
-	$Menu->addMenuItem("Download", "/project/download.php", "_self");
-	# $Menu->addMenuItem("Documentation", "/project/documentation.php", "_self");
-	# $Menu->addMenuItem("Support", "/project/support.php", "_self");
-	# $Menu->addMenuItem("Developers", "/project/developers", "_self");
+	$Menu->addMenuItem("Home", "/emf-store", "_self");
+	$Menu->addMenuItem("Download", "/emf-store/download.php", "_self");
+	# $Menu->addMenuItem("Documentation", "/emf-store/documentation.php", "_self");
+	# $Menu->addMenuItem("Support", "/emf-store/support.php", "_self");
+	# $Menu->addMenuItem("Developers", "/emf-store/developers", "_self");
 	
 	# To define additional CSS or other pre-body headers
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style.css"/>');
