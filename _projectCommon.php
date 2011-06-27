@@ -25,7 +25,7 @@
 	$Nav->setLinkList(array());
 	
 	# Break the navigation into sections
-	$Nav->addNavSeparator("MyProject", 	"/default");
+	$Nav->addNavSeparator("EMFStore", 	"/default");
 	$Nav->addCustomNav("Home", "/emf-store", "_self", 3);
 	$Nav->addCustomNav("Download", "/emf-store/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emf-store/communication.php", "_blank", 3);

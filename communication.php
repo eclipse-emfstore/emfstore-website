@@ -18,24 +18,24 @@
 
 <h3>Mailinglists and Newsgroup</h3>
 
-<p>Since EMFStore is a Eclipse project, we have an <a ref="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
+<p>Since EMFStore is a Eclipse project, we have an <a href="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
 
 If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, where all EMFStore framework developers are subscribed to:
 
-<a ref="mailto:emfstore-dev@eclipse.org"> emfstore-dev@eclipse.org </a>
+<a href="mailto:emfstore-dev@eclipse.org"> emfstore-dev@eclipse.org </a>
 </p>
 
 
 <h3>Bug Reports and Feature Requests</h3>
 
-You can report bugs and feature requests in the <a ref="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emf-store"> bugzilla of Eclipse</a>.
+You can report bugs and feature requests in the <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emf-store"> bugzilla of Eclipse</a>.
 
-Also you can report bugs and feature requests to the <a ref="mailto:emfstore-dev@eclipse.org"> developer mailinglist</a>.
+Also you can report bugs and feature requests to the <a href="mailto:emfstore-dev@eclipse.org"> developer mailinglist</a>.
 
 <h3>Twitter</h3>
 
 We announce import news such as releases on Twitter:
-<a ref="http://twitter.com/emfstore">http://twitter.com/emfstore</a>
+<a href="http://twitter.com/emfstore">http://twitter.com/emfstore</a>
 We always use the #emstore tag.
 
 
@@ -47,12 +47,12 @@ We always use the #emstore tag.
 </br>
 <p>
 <img src="images/maximilian.jpg" height =210 />
-<a ref="mailto:maximilian@emfstore.org">Maximilian</a>
+<a href="mailto:maximilian@emfstore.org">Maximilian</a>
 </p>
 </br>
 <p>
 <img src="images/jonas.jpg" height =210 />
-<a ref="mailto:jonas@emfstore.org">Jonas</a>
+<a href="mailto:jonas@emfstore.org">Jonas</a>
 </p>
 </p>
 
