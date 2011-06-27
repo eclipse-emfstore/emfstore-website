@@ -26,10 +26,8 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("MyProject", 	"/default");
-	$Nav->addCustomNav("Download", "/emf-store/downloads.php", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/emf-store/documentation.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/emf-store/support.php", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/emf-store/developers", "_blank", 3);
+	$Nav->addCustomNav("Download", "/emf-store/download.php", "_self", 3);
+	$Nav->addCustomNav("Communication", "/emf-store/communication", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "EMFStore, EMF, modeling, Eclipse, Model, Repository, CDO";
@@ -42,6 +40,7 @@
 	$Menu->setMenuItemList(array());
 	$Menu->addMenuItem("Home", "/emf-store", "_self");
 	$Menu->addMenuItem("Download", "/emf-store/download.php", "_self");
+	$Menu->addMenuItem("Communication", "/emf-store/communication.php", "_self");
 	# $Menu->addMenuItem("Documentation", "/emf-store/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/emf-store/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/emf-store/developers", "_self");
