@@ -14,15 +14,15 @@
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
-#summary How to get in contact with us or receive news about EMFStore
+<h2>How to get in contact with us or receive news about EMFStore</h3>
 
-=== Mailinglists and Newsgroup ===
+<h3>Mailinglists and Newsgroup</h3>
 
-Since EMFStore is a Eclipse project, we have an [http://www.eclipse.org/forums/eclipse.emfstore EMFStore Eclipse newsgroup].
+Since EMFStore is a Eclipse project, we have an <a ref="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
 
 If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, where all EMFStore framework developers are subscribed to:
 
-[mailto:eemfstore-dev@eclipse.org emfstore-dev@eclipse.org]
+<a mailto:emfstore-dev@eclipse.org> emfstore-dev@eclipse.org </a>
 
 We also have a mailinglist to announce news about the EMFStore such as new releases. You can subscribe here:
 
