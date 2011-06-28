@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMFStore - Download";
+	$pageTitle 		= "EMFStore - Communication";
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
@@ -36,7 +36,7 @@ Also you can report bugs and feature requests to the <a href="mailto:emfstore-de
 
 We announce import news such as releases on Twitter:
 <a href="http://twitter.com/emfstore">http://twitter.com/emfstore</a>
-We always use the #emstore tag.
+We always use the #emfstore tag.
 
 
 
