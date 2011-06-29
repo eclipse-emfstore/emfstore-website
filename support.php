@@ -31,8 +31,8 @@
 </ul>
 
 <h3>Professional Support</h3>
-<p>Open-source software is free of license costs. Furthermore, it is easy to adapt and enhance by new features. Although, like in closed-source software, not everybody not everybody is an expert for any framework. It might take significantly longer for somebody new to the project to extend a certain feature than for the person who introduced it at the first place. Furthermore, software has to be maintained. Even if this can be done literally by everybody for open-source software, there has to be somebody who does it.
-EclipseSource employs several EMFStore committers and <a href="http://eclipsesource.com/en/eclipse/eclipse-emf/">offers professional support</a>.</p>
+<p>Open-source software is free of licensing fees. Furthermore, it is easy to adapt and enhance by new features. Nevertheless, using open-source frameworks is not for free. Like in closed-source software, not everybody is an expert for any framework. The total cost of ownership also includes training, adoption, enhancement and maintainance of a framework. It might take significantly longer for somebody new to the project to extend a certain feature than for the person who introduced it at the first place. Furthermore, software has to be maintained. Even if this can be done literally by everybody for open-source software, a professional maintaiance agreement with fixed response times is often manditory in an industrial setting. This ensures your productivity.
+EclipseSource employs several EMFStore committers and <a href="http://eclipsesource.com/en/eclipse/eclipse-emf/">offers professional support</a> and <a href="http://eclipsesource.com/en/services/eclipse-training/">training</a>.</p>
 </div>
 EOHTML;
 	# Generate the web page
