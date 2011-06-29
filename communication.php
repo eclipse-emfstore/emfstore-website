@@ -18,7 +18,7 @@
 
 <h3>Mailinglists and Newsgroup</h3>
 
-<p>Since EMFStore is a Eclipse project, we have an <a href="http://www.eclipse.org/forums/eclipse.emfstore"> EMFStore Eclipse newsgroup </a>.
+<p>Please do not hesitate to ask questions about EMFStore in the <a href="http://www.eclipse.org/forums/index.php/f/19/"> EMFT Eclipse newsgroup </a>.
 
 If you have feature requests, questions, bugs or if you want to discuss something, you can send us email to this mailinglist, where all EMFStore framework developers are subscribed to:
 
