@@ -18,7 +18,7 @@
 
 <h3>Step 1: Install the EMFStore Framework</h3>
 
-The following video describes how to install the EMFStore framework. As a prerequisite you need a Eclipse Modeling Edition.
+The following video describes how to install the EMFStore framework. As a prerequisite you need an <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/indigor> Eclipse Modeling Edition</a>.
 The EMFStore framework can be installed from <a href="download.php">here</a>.
 
 <div id="screencast">
@@ -33,7 +33,11 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 <embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 
 
+<h3>Step 2: Run the EMFStore Framework</h3>
 
+<p>The following video describes how to run the EMFStore framework. As a prerequisite you need a EMF model. This can be your own model. If you do not have a model, please use this example model.
+<a href="exampleModel.zip">here</a>.
+</p>
 
 </div>
 EOHTML;
