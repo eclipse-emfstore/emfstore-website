@@ -16,6 +16,11 @@
 <div id="midcolumn">
 <h2>How to get started with the EMFStore</h2>
 
+<h3>Step 1: Install the EMFStore Framework</h3>
+
+The following video describes how to install the EMFStore framework. As a prerequisite you need a Eclipse Modeling Edition.
+The EMFStore framework can be installed from <a href="download.php">here</a>.
+
 <div id="screencast">
 
 
