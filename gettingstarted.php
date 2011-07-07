@@ -20,7 +20,7 @@
 
 The following video describes how to install the EMFStore framework. As a prerequisite you need an <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/indigor"> Eclipse Modeling Edition</a>.
 The EMFStore framework can be installed from <a href="download.php">here</a>.
-
+</br>
 <div id="screencast">
 
 
@@ -31,6 +31,7 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 <param name="allowscriptaccess" value="always">
 </param>
 <embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+</div>
 
 
 <h3>Step 2: Run the EMFStore Framework</h3>
@@ -38,7 +39,16 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 <p>The following video describes how to run the EMFStore framework. As a prerequisite you need a EMF model. This can be your own model. If you do not have a model, please use this example model.
 <a href="exampleModel.zip">here</a>.
 </p>
+<div id="screencast">
 
+
+<object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/i5o0eW0nZSc?hl=de&fs=1">
+</param>
+<param name="allowFullScreen" value="true">
+</param>
+<param name="allowscriptaccess" value="always">
+</param>
+<embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 </div>
 EOHTML;
 	# Generate the web page
