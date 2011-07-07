@@ -23,7 +23,7 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 </br>
 <div id="screencast">
 
-
+<p>
 <object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/i5o0eW0nZSc?hl=de&fs=1">
 </param>
 <param name="allowFullScreen" value="true">
@@ -32,13 +32,14 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 </param>
 <embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 </div>
-
+</p>
 
 <h3>Step 2: Run the EMFStore Framework</h3>
 
 <p>The following video describes how to run the EMFStore framework. As a prerequisite you need a EMF model. This can be your own model. If you do not have a model, please use this example model.
-<a href="exampleModel.zip">here</a>.
+<a href="exampleModel.zip">here</a>. If you need help to create your own EMF model, please have a look at <a href="http://eclipsesource.com/blogs/2011/03/22/what-every-eclipse-developer-should-know-about-emf-part-1/"> this tutorial</a>.
 </p>
+<p>
 <div id="screencast">
 
 
@@ -50,6 +51,7 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 </param>
 <embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 </div>
+</p>
 EOHTML;
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
