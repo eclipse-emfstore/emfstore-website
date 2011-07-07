@@ -17,10 +17,11 @@
 <h2>How to get started with the EMFStore</h2>
 
 <h3>Step 1: Install the EMFStore Framework</h3>
-
+<p>
 The following video describes how to install the EMFStore framework. As a prerequisite you need an <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/indigor"> Eclipse Modeling Edition</a>.
 The EMFStore framework can be installed from <a href="download.php">here</a>.
 </br>
+</p>
 <div id="screencast">
 
 <p>
