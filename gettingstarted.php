@@ -53,6 +53,8 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 <embed src="http://www.youtube.com/v/3oFk2E4PECI?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 </div>
 </p>
+<h3>More Documentation</h3>
+<p>Please note that we are currently moving the documentation to the Eclipse website. Currently, you can find it <a href="http://code.google.com/p/unicase/wiki/EMFStoreDocumentation>here</a>. 
 EOHTML;
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
