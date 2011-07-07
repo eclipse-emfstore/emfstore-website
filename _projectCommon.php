@@ -29,6 +29,7 @@
 	$Nav->addCustomNav("Home", "/emf-store", "_self", 3);
 	$Nav->addCustomNav("Download", "/emf-store/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emf-store/communication.php", "_blank", 3);
+	$Nav->addCustomNav("Getting started", "/emf-store/gettingstarted.php", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "EMFStore, EMF, modeling, Eclipse, Model, Repository, CDO";
@@ -42,6 +43,7 @@
 	$Menu->addMenuItem("Home", "/emf-store", "_self");
 	$Menu->addMenuItem("Download", "/emf-store/download.php", "_self");
 	$Menu->addMenuItem("Communication", "/emf-store/communication.php", "_self");
+	$Menu->addMenuItem("Getting started", "/emf-store/gettingstarted.php", "_self");
 	# $Menu->addMenuItem("Documentation", "/emf-store/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/emf-store/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/emf-store/developers", "_self");

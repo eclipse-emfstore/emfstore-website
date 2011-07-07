@@ -50,7 +50,7 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 </param>
 <param name="allowscriptaccess" value="always">
 </param>
-<embed src="http://www.youtube.com/v/YrqEUjAo82U?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+<embed src="http://www.youtube.com/v/3oFk2E4PECI?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
 </div>
 </p>
 EOHTML;
