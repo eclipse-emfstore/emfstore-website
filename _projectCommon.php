@@ -26,11 +26,11 @@
 	
 	# Break the navigation into sections
 	$Nav->addNavSeparator("EMFStore", 	"/default");
-	$Nav->addCustomNav("Home", "/emf-store", "_self", 3);
-	$Nav->addCustomNav("Download", "/emf-store/download.php", "_self", 3);
-	$Nav->addCustomNav("Communication", "/emf-store/communication.php", "_blank", 3);
-	$Nav->addCustomNav("Getting started", "/emf-store/gettingstarted.php", "_blank", 3);
-	$Nav->addCustomNav("Support", "/emf-store/support.php", "_blank", 3);
+	$Nav->addCustomNav("Home", "/emfstore", "_self", 3);
+	$Nav->addCustomNav("Download", "/emfstore/download.php", "_self", 3);
+	$Nav->addCustomNav("Communication", "/emfstore/communication.php", "_blank", 3);
+	$Nav->addCustomNav("Getting started", "/emfstore/gettingstarted.php", "_blank", 3);
+	$Nav->addCustomNav("Support", "/emfstore/support.php", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "EMFStore, EMF, modeling, Eclipse, Model, Repository, CDO";
@@ -41,14 +41,14 @@
 	# top navigation bar
 	# To override and replace the navigation with your own, uncomment the line below.
 	$Menu->setMenuItemList(array());
-	$Menu->addMenuItem("Home", "/emf-store", "_self");
-	$Menu->addMenuItem("Download", "/emf-store/download.php", "_self");
-	$Menu->addMenuItem("Communication", "/emf-store/communication.php", "_self");
-	$Menu->addMenuItem("Getting started", "/emf-store/gettingstarted.php", "_self");
-	$Menu->addMenuItem("Support", "/emf-store/support.php", "_self");
-	# $Menu->addMenuItem("Documentation", "/emf-store/documentation.php", "_self");
-	# $Menu->addMenuItem("Support", "/emf-store/support.php", "_self");
-	# $Menu->addMenuItem("Developers", "/emf-store/developers", "_self");
+	$Menu->addMenuItem("Home", "/emfstore", "_self");
+	$Menu->addMenuItem("Download", "/emfstore/download.php", "_self");
+	$Menu->addMenuItem("Communication", "/emfstore/communication.php", "_self");
+	$Menu->addMenuItem("Getting started", "/emfstore/gettingstarted.php", "_self");
+	$Menu->addMenuItem("Support", "/emfstore/support.php", "_self");
+	# $Menu->addMenuItem("Documentation", "/emfstore/documentation.php", "_self");
+	# $Menu->addMenuItem("Support", "/emfstore/support.php", "_self");
+	# $Menu->addMenuItem("Developers", "/emfstore/developers", "_self");
 	
 	# To define additional CSS or other pre-body headers
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style.css"/>');
