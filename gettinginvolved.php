@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Client Platform - Getting involved";
+	$pageTitle 		= "EMFStore - Getting involved";
 
 	$html  = 	$html = file_get_contents('pages/_gettinginvolved.html');
 	# Generate the web page
