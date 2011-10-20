@@ -32,6 +32,13 @@ Please refer to <a href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_
 <li>After import, open the target project, double click the target definition file and click "set as target" in the right upper corner</li>
 </ul>
 </p>
+
+<p>
+The final step is to create a check style configuration. We are using checkstyle 5. Please open the global preferences (Window => Preferences) and add a new Checkstyle configuration named "emfstoreStyle" with a relative pointer to our config file:
+  
+<br></p>
+<p><img  src="images/checkstyle.png" ></p>
+
 		<p>
 			To run the EMFStore please include an EMF model in the launch
 			configuration. For testing, you can use <a
