@@ -54,6 +54,17 @@ The final step is to create two check style configurations.  One for all emfstor
 </ul>
 </p>
 
+<p><img  src="images/checkstyle.png" ><br></p>
+
+<p>The EMF Store project also uses specific Java formatting settings to avoid whitespace conflicts. All existing plugins are configured to use these settings by default, but you have to import the EMF Store formatter file into Eclipse as follows: </p>
+<ol>
+<li>Open preferences </li>
+<li>Select Java/Code Style/Formatter </li>
+<li>Select &quot;Import...&quot; </li>
+<li>Choose the EMF Store formatter file found in the org.eclipse.emf.emfstore.core plugin under developer/coding/emfstoreFormatter.xml.</li> 
+<li>Confirm with ok </li>
+</ol>
+<p>Now the EMF Store specific auto-formatting rules should be applied every time format is called. </p>
 
 <b>Run the EMFStore</b>		
 <p>
