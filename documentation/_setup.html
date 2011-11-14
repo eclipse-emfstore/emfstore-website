@@ -1,0 +1,49 @@
+<div id="midcolumn">
+<h2>Installing and running the EMF Store</h2>
+<p> 
+Follow the steps below to install the EMF Store. 
+</p>
+
+<b>Step 1: Get Eclipse</b>
+<p>
+To install the EMF Client Platform, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a>
+</p>
+
+<b>Step 2: Installation using the update site</b>
+<p>
+In Eclipse, go to <em>"Help >> Install New Software..."</em> and add the EMF Store update site by clicking on the <em>Add...</em> button in the upper right corner. Enter an arbitrary name and get the URL from our <a href="../download.php">downloads page</a>.
+	<p><img  src="images/emfstore-update-site.png" ></p>
+</p>
+
+<p>
+Select all packages  under <i>EMFStore Core Features</i> for installation.
+	<p><img  src="images/emfstore-required-packages.png" ></p>
+
+Proceed in the installation wizard by repeatedly clicking <em>Next</em> until the installation starts. Midway through, you will get a warning message. Click OK to proceed.
+	<p><img src="images/emfstore-security-warning.png"></p>
+When the installation has finished you are required to restart Eclipse. At this point, the EMF Store is already fully installed into your Eclipse environment.
+</p>
+
+
+<b>Step 3: Importing the Example Model</b>
+<p>
+In order to see the EMF Store in action, it is necessary to have a model to work with. If you already have your own model, you can skip this step. Otherwise, you can download this<a href="documentation/exampleModel.zip"> example model </a> and add it to your workspace by importing it from the filesystem.
+</p>
+
+
+<b>Step 4: Starting the EMF Store</b>
+	<p>
+		First, you must run the EMF Client Platform as described under Step 4 in the <a href="../emfclient/documentation.php">ECP documentation</a>. Then you can start the EMF Store by
+		running a default Eclipse Application in the debug configurations.
+	<p><img src="images/emfstore-debug-config.png"></p>
+In the new runtime instance, add a new View by navigating to <em>"Window >> Show View >> Other..."</em>, then select the view <em>EmfStore Browser</em> in the folder <em>ECP</em>.
+	<p><img src="images/emfstore-repository-browser.png"></p>
+</p>
+
+<p>
+In the EmfStore Browser view, you can create a new project by doing <em>"right click on localhost [Localhost Server]>> Create new project..."</em>.
+	<p><img src="images/emfstore-browser-view.png"></p>
+Then you need to Checkout the new project from the server using <em>"right click >> Checkout"</em>.<p><img src="images/emfstore-checkout-project.png"></p>
+</p>
+</div>
+

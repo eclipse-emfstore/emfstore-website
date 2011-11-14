@@ -10,9 +10,26 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMFStore - Documentation";
+	$pageTitle 		= "EMF Store - Documentation";
 
-	$html  = 	$html = file_get_contents('pages/_documentation.html');
+	$html  = <<<EOHTML
+<div id="midcolumn">
+<h2>Documentation</h2>
+We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
+
+<h3>Tutorials</h3>
+<li><a href="documentation/setup.php">How to set up the EMF Store</a></li>
+<li><a href="documentation/how-to-run.php">How to run the EMF Store</a></li>
+
+
+
+
+
+
+
+ 
+</div>
+EOHTML;
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
