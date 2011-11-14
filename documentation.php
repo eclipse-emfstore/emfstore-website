@@ -19,7 +19,6 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 
 <h3>Tutorials</h3>
 <li><a href="documentation/setup.php">How to set up the EMF Store</a></li>
-<li><a href="documentation/how-to-run.php">How to run the EMF Store</a></li>
 
 
 
