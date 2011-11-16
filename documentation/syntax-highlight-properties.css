@@ -1,0 +1,19 @@
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.properties  {white-space: nowrap;border: 1px dotted #a0a0a0; font-family: 'Courier New', Courier, monospace; font-size: 110%; background-color: #f0f0f0; margin: 0; line-height: 110%; padding: 0;color: #0000bb;}
+.properties a:link {color: #006;}
+.properties a:hover {background-color: #d6d6e6;}
+.properties .head {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-bottom: 1px solid #d0d0d0; padding: 2px;}
+.properties .foot {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-top: 1px solid #d0d0d0; padding: 2px;}
+.properties .imp {font-weight: bold; color: red;}
+.properties .co1 {color: #808080; font-style: italic;font-style: normal;}
+.properties .coMULTI {font-style: normal;}
+.properties .es0 {font-weight: normal;}
+.properties .sy0 {color: #000000;}
+.properties .st0 {color: #933;}
+.properties .me {1}
+.properties .re0 {color: #000080; font-weight:bold;}
+.properties .re1 {color: #008000; font-weight:bold;}
+.properties span.xtra { display:block; }
