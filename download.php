@@ -23,6 +23,8 @@
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
 </ul>
+To learn how to setup and run EMF Store read the tutorial <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a>.
+
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
 
 
