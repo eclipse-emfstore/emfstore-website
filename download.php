@@ -19,7 +19,7 @@
 <p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
 
 <h3>Milestone Builds</h3>
-<p>EMF Store has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Store has been developed 3 years before it moved to Eclipse. You can get the the latest milestone build from 
+<p>EMF Store has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Store has been developed 3 years before it moved to Eclipse. You can get the the latest milestone build from this update site 
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
 </ul>
