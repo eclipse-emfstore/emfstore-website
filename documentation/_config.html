@@ -1,0 +1,298 @@
+<div id="midcolumn">
+<h2>EMF Store Configuration</h2>
+<p> 
+All about the configuration of EMFStore. 
+</p>
+
+<b>Data Storage Configuration</b>
+<p>By default EMFStore will store its data in the user home in the &quot;.unicase&quot; folder in a subfolder called &quot;emfstore&quot;. To change this behaviour you can configure the following start-up parameter: -EMFStoreHome=&lt;your new path&gt; </p>
+<b>Loading a Model</b>
+<p>EMFStore is independent of the actual model and therefore only operates on the metamodel offered by UNICASE. It is possible to plug in any other model by inheriting the metamodel. Due to this decoupling EMFStore does not know where to find your model and it must therefore be defined within the startup configuration. This is also true for the default UNICASE model. Additionally you have to provide a model version number in your model to allow the migrator code (which is able to migrate from one version of the model to another) by using the org.unicase.metamodel.modelversion extension in your model (This is already set in the UNICASE model) </p>
+<b>How to load a model with EMFStore</b>
+<ul>
+<li>Open the <i>Run Configuration</i> for the EMFStore (e.g right-click on org.unicase.emfstore =&gt; click on <i>Run as</i> =&gt; click on <i>Run Configuration</i>) </li>
+</ul>
+<ul>
+<li>Be sure, that the emfstore run configuration is chosen on the left side. Then Choose the <i>Plug-ins</i> Tab in the <i>Run Configurations</i> window </li>
+</ul>
+<ul>
+<li>For <i>Launch with</i> select <i>plug-ins selected below only</i> </li>
+</ul>
+<ul>
+<li>Now choose your model. In the case of UNICASE, select <i>org.unicase.model</i> </li>
+</ul>
+<ul><li>Just to be sure, use the <i>Add Required Plug-ins</i> button on the right side </li>
+</ul>
+<ul>
+<li>To validate the chosen Plug-ins you can press <i>Validate Plug-ins</i>. There shouldn&#x27;t be any problem, if yes, try to resovle them. </li>
+</ul>
+<ul>
+<li>Finally press <i>Apply</i> and you are ready to go </li>
+</ul>
+
+<h2>Note about ports</h2>
+<p>EMFStore can run with RMI and XML-RPC. XML-RPC was introduced to be able to run via HTTPS and therefore work in firewalled environments. HTTPS known port lies on 443, this causes a problem for the EMFStore on Unix based systems (e.g. Linux and Mac OS). These operating systems only allow low port numbers (&lt;1024) if the process has root access. Because we wanted to avoid giving the server root access, we decided to use rerouting of the port. So we reroute port 443 to 8443 for example and EMFStore then listens on 8443. </p>
+<p>System administrators should know how to do this, but if you want to try it out, here are the command lines (replace the IP with your adress): </p>
+<p>Mac OS </p><pre> sudo ipfw add forward 123.123.123.123,8443 ip from any to 123.123.123.123 443 in</pre>
+<p>Linux </p><pre>sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443</pre>
+
+<h2>Configuration File</h2>
+<p>
+If you need to adapt the default configuration of EMFStore you have to create a configuration file called <strong>es.properties</strong>. 
+EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emfstore/conf/es.properties </pre>
+</p>
+<p>In this file you can use the default java propeties syntax to define your options. Below there will be a sample es.properties file explaining all possible configurations: </p>
+
+<ol><li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Copyright (c) 2008-2010 Jonas Helming, Maximilian Koegel. All rights reserved. This program and the</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># accompanying materials are made available under the terms of the Eclipse Public License v1.0 which accompanies this</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># distribution, and is available at http://www.eclipse.org/legal/epl-v10.html</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># EMFStore property file: es.properties</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># with descriptions</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Version of file: 5</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Last Update: 15.02.2010</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Author(s): Otto von Wesendonk</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># EMFStore is able to run without this configuration file. The default values are displayed for every option.</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Some options differ if the server is running as released version [RV] or is running as a developer version [DV]</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># This file will be processed by the default java properties api. Therefore the syntax for options is:</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># &quot;option.key = value&quot;. If multiple values are allowed, separate them with &quot;,&quot;. &quot;option.key = value1,value2&quot;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Version</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Use this property do define accepted version numbers. For the server, version numbers only are strings, so you can define</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># your format as you wish. You can define several version numbers at the same time seperating them with a &quot;,&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># With the keyword &quot;any&quot; all versions are accepted, this should be used for developement only.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Multiple values seperate by &quot;,&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: [RV] no value, server won't accept any call. [DV] if no value is specified, &quot;any&quot; is used, otherwise </span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># the specified values are checked</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.acceptedversions</span><span class="sy0">=</span><span class="re1">0.3.40, 0.3.41, 0.3.42</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Persistence</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#emfstore.persistence.version.projectstate</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># EMFStore mainly saves operations in it's versions. For backup reasons however, every X versions the total project state </span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># is saved into &nbsp;a file. This options allows to specify how often a complete &nbsp;project state should be saved. If the range is too </span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># small a lot of memory is used.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Number bigger than 0</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;1&quot; - every state is preserved. Shouldn't be used if server is deployed</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.persistence.version.projectstate.everyxversions</span> <span class="sy0">=</span><span class="re1"> 50</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Deprecated, not in use anymore.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># emfstore.persistence.version.backup.projectstate.everyxversions = 10</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Validation</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines whether the projects on the server shall run through validation. </span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Validation is used to confirm the consistency of the saved projects and models.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: &quot;true&quot; or &quot;false&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;true&quot;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.validation</span> <span class="sy0">=</span><span class="re1"> true</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines level of validation. At the moment there are 3 kinds of validation, which can be combined by adding them bitwise.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Level 1: Loading all files and loading their models and cross-file links.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Level 2: Checks whether every modelelement and change operation has modelelement id</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Level 4: Applies all changes between to projectstates and compares whether calculated projet state and the actual projectstate are equal.</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Options: Any level or their bitwise combination. E.g. the default value 7 is a combination of all other levels: 1 &amp; 2 &amp; 4 = 7. </span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># If only want to use the first both level, choose 3 = 1 &amp; 2.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: 7 </span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.validation.level</span> <span class="sy0">=</span><span class="re1"> 7</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># You can exclude certain projects from the validation. It is not possible to exclude projects from _Level 1_ validation</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Multiple Project IDs seperated by &quot;,&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: Not set</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.validation.exclude</span> <span class="sy0">=</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Connection related options</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># At the moment EMFStore runs with RMI and XML RPC in parallel. So you can use both technologies for the connection.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># XML RPC is suggested for enviroments with strict firewalls, because it runs via HTTPS.</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines whether RMI should use SSL encryption or not. Please Note: The password is always encrypted with the server certificate,</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># this &quot;only&quot; indicates whether all data is encrypted additionally.</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Options: &quot;true&quot; or &quot;false&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;true&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.connection.rmi.encryption</span> <span class="sy0">=</span><span class="re1"> true</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the Port for the XML RPC server. Normally we want to use the &quot;442&quot; HTTPS port. However, on Linux/Unix based systems</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># lower ports (&lt;1024) are restricted. One workaround for these operating systems ist to listen on higher port and to setup </span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># a port forward from 443 to the specified port.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Any possible port</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: [RV] &quot;443&quot;, [DV] &quot;8080&quot;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.connection.xmlrpc.port</span><span class="sy0">=</span><span class="re1"> 8080</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Certificates</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># These options are used to handle the server's keystore. the keystore file is located in the main EMFStore folder.</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># When deploying you should generate an own certificate and don't use the default developer certificate</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the alias of the main server certificate stored in the keystore.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: any alias allowed in the keystore</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: dependent of the used certificate</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.keystore.alias</span> <span class="sy0">=</span><span class="re1"> youralias</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Password for the selected certificate.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: any password</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: dependent of the used certificate</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.keystore.password</span> <span class="sy0">=</span><span class="re1"> yourpassword</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the used certificate type stored in the keystore</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Options: All Certificates which are supported by the java keystore</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;SunX509&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.keystore.certificate.type</span><span class="sy0">=</span><span class="re1"> SunX509</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the used cipher algorithm for the certificate</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: All cipher algorithms supported by the java api</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;RSA&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.keystore.cipher.algorithm</span><span class="sy0">=</span><span class="re1">RSA</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Authentication</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the name of the super user. The super user will be created on server startup if not present.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># If the super user is deleted while runtime, you have to restart the server in order to restor it.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Any name</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;super&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.superuser</span> <span class="sy0">=</span><span class="re1"> super</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># The password for the super user account.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: Any password</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;super&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.superuser.password</span> <span class="sy0">=</span><span class="re1"> super</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Defines the session timeout for a user session. If a session is inactive for this period of time, the session will be destroyed.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: A number specifiing the time in milliseconds</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;1800000&quot; (= 30 minutes)</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.session.timeout</span><span class="sy0">=</span><span class="re1"> 1800000</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines the policy for user authentication. EMFStore doesn't store any password and uses external resources for authentication.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># In order to create a new user, the user has to be created within the EMFStore with a specified user name.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># The authentication method uses this name and validates the password against the specified authentication adapter</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: &quot;spfv&quot; or &quot;ldap&quot; (explenations beneath)</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: &quot;spfv&quot;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.policy</span><span class="sy0">=</span><span class="re1">spfv</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># SPFV (Simple property file verification) is a simple mechanism to store user passwords. It's only intended for development purposes.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># It uses the java properties api and the format for passwords are: &quot;username=userpassword&quot; in each line</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># The default location for this file is {user-folder}/.unicase/emfstore/conf/user.properties</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Defines the location of the spfv file.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: OS dependent path to file, absolute or relative.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: Not set (= than uses the default location)</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#emfstore.accesscontrol.authentication.spfv = /your/path/</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># If you are using LDAP, you have to specify the server's location. EMFStore can cope with several LDAP server at once.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># The server will try to authenticate against each server until the authentication was successful, otherwise the authentication fails</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># For each LDAP server there are 3 necessary options, all prefixed with the server's index</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Indexes start with 1 and you can add more by counting up. You shouldn't have a gap in your indexes, otherwise the server will stop lookinf for further LDAP servers.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Also if a configuration is empty, the server will stop looking for further configurations.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: LDAP configuration specifying &quot;url&quot;, &quot;base&quot; and &quot;searchdn&quot;</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Default: Not set</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.1.url</span><span class="sy0">=</span><span class="re1">ldap://ldap1.in.tum.de:389</span></div></li>
+
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.1.base</span><span class="sy0">=</span><span class="re1">ou=Personen,ou=IN,o=TUM,c=DE</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.1.searchdn</span><span class="sy0">=</span><span class="re1">uid</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.2.url</span><span class="sy0">=</span><span class="re1">ldap://ldap2.in.tum.de:389</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.2.base</span><span class="sy0">=</span><span class="re1">ou=Personen,ou=IN,o=TUM,c=DE</span></div></li>
+
+<li class="li1"><div class="de1"><span class="re0">emfstore.accesscontrol.authentication.ldap.2.searchdn</span><span class="sy0">=</span><span class="re1">uid</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Plugin configuration.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Defines whehter post load plugins shall be called or not.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Options: true or false</span></div></li>
+
+<li class="li1"><div class="de1"><span class="co1"># Default: false</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.startup.post.loadlistener</span> <span class="sy0">=</span><span class="re1"> false</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># Deprecated options or options not ment for public use. Please dont change or use these:</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># Used for development purposes.</span></div></li>
+<li class="li1"><div class="de1"><span class="co1">#</span></div></li>
+<li class="li1"><div class="de1"><span class="re0">emfstore.startup.loadlistener</span> <span class="sy0">=</span><span class="re1"> false</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co1"># EMF resource type for storing data. At the moment only one option is allowed: org.unicase.emfstore.storage.XMLStorage</span></div></li>
+<li class="li1"><div class="de1"><span class="co1"># emfstore.persistence.resourceStorage = org.unicase.emfstore.storage.XMLStorage</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+</ol>
+</div>
+
