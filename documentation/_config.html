@@ -11,10 +11,12 @@ All about the configuration of EMFStore.
 <p>EMFStore can run with  XML-RPC. XML-RPC was introduced to be able to run via HTTPS and therefore work in firewalled environments. HTTPS known port lies on 443, this causes a problem for the EMFStore on Unix based systems (e.g. Linux and Mac OS). These operating systems only allow low port numbers (&lt;1024) if the process has root access. Because we wanted to avoid giving the server root access, we decided to use rerouting of the port. So we reroute port 443 to 8443 for example and EMFStore then listens on 8443. </p>
 <p>System administrators should know how to do this, but if you want to try it out, here are the command lines (replace the IP with your adress): </p>
 <p>Mac OS
-<pre>$ sudo ipfw add forward 123.123.123.123,8443 ip from any to 123.123.123.123 443</pre>
+<pre>$ sudo ipfw add forward 123.123.123.123,8443 \
+   ip from any to 123.123.123.123 443</pre>
 </p>
 <p>Linux
-<pre>$ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443</pre>
+<pre>$ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 \
+   -j REDIRECT --to-port 8443</pre>
 </p>
 
 <h2>Configuration File</h2>
