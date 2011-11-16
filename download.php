@@ -21,7 +21,7 @@
 <h3>Milestone Builds</h3>
 <p>EMF Store has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Store has been developed 3 years before it moved to Eclipse. You can get the the latest milestone build from this update site 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/089M905">0.8.9M905 (http://download.eclipse.org/emf-store/089M905)</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/">0.8.9M905 (http://download.eclipse.org/emf-store/)</a>.</li>
 </ul>
 To learn how to setup and run EMF Store read the tutorial <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a>.<br />
 
