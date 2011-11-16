@@ -5,43 +5,22 @@ All about the configuration of EMFStore.
 </p>
 
 <b>Data Storage Configuration</b>
-<p>By default EMFStore will store its data in the user home in the &quot;.unicase&quot; folder in a subfolder called &quot;emfstore&quot;. To change this behaviour you can configure the following start-up parameter: -EMFStoreHome=&lt;your new path&gt; </p>
-<b>Loading a Model</b>
-<p>EMFStore is independent of the actual model and therefore only operates on the metamodel offered by UNICASE. It is possible to plug in any other model by inheriting the metamodel. Due to this decoupling EMFStore does not know where to find your model and it must therefore be defined within the startup configuration. This is also true for the default UNICASE model. Additionally you have to provide a model version number in your model to allow the migrator code (which is able to migrate from one version of the model to another) by using the org.unicase.metamodel.modelversion extension in your model (This is already set in the UNICASE model) </p>
-<b>How to load a model with EMFStore</b>
-<ul>
-<li>Open the <i>Run Configuration</i> for the EMFStore (e.g right-click on org.unicase.emfstore =&gt; click on <i>Run as</i> =&gt; click on <i>Run Configuration</i>) </li>
-</ul>
-<ul>
-<li>Be sure, that the emfstore run configuration is chosen on the left side. Then Choose the <i>Plug-ins</i> Tab in the <i>Run Configurations</i> window </li>
-</ul>
-<ul>
-<li>For <i>Launch with</i> select <i>plug-ins selected below only</i> </li>
-</ul>
-<ul>
-<li>Now choose your model. In the case of UNICASE, select <i>org.unicase.model</i> </li>
-</ul>
-<ul><li>Just to be sure, use the <i>Add Required Plug-ins</i> button on the right side </li>
-</ul>
-<ul>
-<li>To validate the chosen Plug-ins you can press <i>Validate Plug-ins</i>. There shouldn&#x27;t be any problem, if yes, try to resovle them. </li>
-</ul>
-<ul>
-<li>Finally press <i>Apply</i> and you are ready to go </li>
-</ul>
+<p>By default EMFStore will store its data in the user home in the &quot;.emfstore&quot; folder in a subfolder called &quot;server&quot;. To change this behavior you can configure the following start-up parameter: -EMFStoreHome=&lt;your new path&gt; </p>
 
 <h2>Note about ports</h2>
-<p>EMFStore can run with RMI and XML-RPC. XML-RPC was introduced to be able to run via HTTPS and therefore work in firewalled environments. HTTPS known port lies on 443, this causes a problem for the EMFStore on Unix based systems (e.g. Linux and Mac OS). These operating systems only allow low port numbers (&lt;1024) if the process has root access. Because we wanted to avoid giving the server root access, we decided to use rerouting of the port. So we reroute port 443 to 8443 for example and EMFStore then listens on 8443. </p>
+<p>EMFStore can run with  XML-RPC. XML-RPC was introduced to be able to run via HTTPS and therefore work in firewalled environments. HTTPS known port lies on 443, this causes a problem for the EMFStore on Unix based systems (e.g. Linux and Mac OS). These operating systems only allow low port numbers (&lt;1024) if the process has root access. Because we wanted to avoid giving the server root access, we decided to use rerouting of the port. So we reroute port 443 to 8443 for example and EMFStore then listens on 8443. </p>
 <p>System administrators should know how to do this, but if you want to try it out, here are the command lines (replace the IP with your adress): </p>
-<p>Mac OS </p>
-<pre> sudo ipfw add forward 123.123.123.123,8443 ip from any to 123.123.123.123 443</pre>
-<p>Linux </p>
-<pre>sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443</pre>
+<p>Mac OS
+<pre>$ sudo ipfw add forward 123.123.123.123,8443 ip from any to 123.123.123.123 443</pre>
+</p>
+<p>Linux
+<pre>$ sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443</pre>
+</p>
 
 <h2>Configuration File</h2>
 <p>
 If you need to adapt the default configuration of EMFStore you have to create a configuration file called <strong>es.properties</strong>. 
-EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emfstore/conf/es.properties </pre>
+EMFStore will look for this file under the following path: <pre>{user-folder}/.emfstore/server/profiles/default/conf/es.properties </pre>
 </p>
 <p>In this file you can use the default java propeties syntax to define your options. Below there will be a sample es.properties file explaining all possible configurations: </p>
 <div class="properties" style="overflow:auto">
@@ -54,75 +33,77 @@ EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emf
 
 <span class="co1"># with descriptions</span><br />
 <span class="co1">#</span><br />
-<span class="co1"># Version of file: 5</span><br />
-<span class="co1"># Last Update: 15.02.2010</span><br />
+<span class="co1"># Version of file: 5.1</span><br />
+<span class="co1"># Last Update: 16.03.2010</span><br />
 <span class="co1"># Author(s): Otto von Wesendonk</span><br />
 <span class="co1">#</span><br />
 <br />
+<span class="co1"># THIS ES.PROPERTIES FILE WAS AUTOMATICALLY COPIED INTO YOUR CONFIG PATH BECAUSE THERE WAS NO OTHER PROPERTY FILE FOUND.</span><br />
+<br />
 <span class="co1"># EMFStore is able to run without this configuration file. The default values are displayed for every option.</span><br />
+
 <br />
 <span class="co1"># Some options differ if the server is running as released version [RV] or is running as a developer version [DV]</span><br />
-
 <br />
 <span class="co1"># This file will be processed by the default java properties api. Therefore the syntax for options is:</span><br />
 <span class="co1"># &quot;option.key = value&quot;. If multiple values are allowed, separate them with &quot;,&quot;. &quot;option.key = value1,value2&quot;</span><br />
 <br />
 <br />
 <span class="co1">#</span><br />
+
 <span class="co1"># Version</span><br />
 <span class="co1">#</span><br />
-
 <br />
 <span class="co1"># Use this property do define accepted version numbers. For the server, version numbers only are strings, so you can define</span><br />
 <span class="co1"># your format as you wish. You can define several version numbers at the same time seperating them with a &quot;,&quot;</span><br />
 <span class="co1"># With the keyword &quot;any&quot; all versions are accepted, this should be used for developement only.</span><br />
 <span class="co1"># Options: Multiple values seperate by &quot;,&quot;</span><br />
-<span class="co1"># Default: [RV] no value, server won't accept any call. [DV] if no value is specified, &quot;any&quot; is used, otherwise </span><br />
 
+<span class="co1"># Default: [RV] no value, server won't accept any call. [DV] if no value is specified, &quot;any&quot; is used, otherwise </span><br />
 <span class="co1"># the specified values are checked</span><br />
 <span class="co1">#</span><br />
-<span class="re0">emfstore.acceptedversions</span><span class="sy0">=</span><span class="re1">0.3.40, 0.3.41, 0.3.42</span><br />
+<span class="re0">emfstore.acceptedversions</span><span class="sy0">=</span><span class="re1">any</span><br />
 <br />
 <br />
 <span class="co1">#</span><br />
+
 <span class="co1"># Persistence</span><br />
 <span class="co1">#</span><br />
 <br />
-
 <span class="co1">#</span><br />
 <span class="co1">#emfstore.persistence.version.projectstate</span><br />
 <br />
 <span class="co1"># EMFStore mainly saves operations in it's versions. For backup reasons however, every X versions the total project state </span><br />
 <span class="co1"># is saved into &nbsp;a file. This options allows to specify how often a complete &nbsp;project state should be saved. If the range is too </span><br />
 <span class="co1"># small a lot of memory is used.</span><br />
+
 <span class="co1"># Options: Number bigger than 0</span><br />
 <span class="co1"># Default: &quot;1&quot; - every state is preserved. Shouldn't be used if server is deployed</span><br />
-
 <span class="co1">#</span><br />
 <span class="re0">emfstore.persistence.version.projectstate.everyxversions</span> <span class="sy0">=</span><span class="re1"> 50</span><br />
 <br />
 <span class="co1"># Deprecated, not in use anymore.</span><br />
+
 <span class="co1"># emfstore.persistence.version.backup.projectstate.everyxversions = 10</span><br />
 <br />
 <br />
 <span class="co1">#</span><br />
-
 <span class="co1"># Validation</span><br />
 <span class="co1">#</span><br />
 <br />
 <span class="co1"># Defines whether the projects on the server shall run through validation. </span><br />
 <span class="co1"># Validation is used to confirm the consistency of the saved projects and models.</span><br />
 <span class="co1"># Options: &quot;true&quot; or &quot;false&quot;</span><br />
-<span class="co1"># Default: &quot;true&quot;</span><br />
 
+<span class="co1"># Default: &quot;true&quot;</span><br />
 <span class="co1">#</span><br />
 <span class="re0">emfstore.validation</span> <span class="sy0">=</span><span class="re1"> true</span><br />
 <br />
 <span class="co1"># Defines level of validation. At the moment there are 3 kinds of validation, which can be combined by adding them bitwise.</span><br />
 <span class="co1"># Level 1: Loading all files and loading their models and cross-file links.</span><br />
 <span class="co1"># Level 2: Checks whether every modelelement and change operation has modelelement id</span><br />
-<span class="co1"># Level 4: Applies all changes between to projectstates and compares whether calculated projet state and the actual projectstate are equal.</span><br />
 
+<span class="co1"># Level 4: Applies all changes between to projectstates and compares whether calculated projet state and the actual projectstate are equal.</span><br />
 <span class="co1"># Options: Any level or their bitwise combination. E.g. the default value 7 is a combination of all other levels: 1 &amp; 2 &amp; 4 = 7. </span><br />
 <span class="co1"># If only want to use the first both level, choose 3 = 1 &amp; 2.</span><br />
 <span class="co1"># Default: 7 </span><br />
@@ -177,14 +158,14 @@ EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emf
 <span class="co1"># Options: any alias allowed in the keystore</span><br />
 <span class="co1"># Default: dependent of the used certificate</span><br />
 <span class="co1">#</span><br />
-<span class="re0">emfstore.keystore.alias</span> <span class="sy0">=</span><span class="re1"> youralias</span><br />
+<span class="re0">emfstore.keystore.alias</span> <span class="sy0">=</span><span class="re1"> emfstoreServer</span><br />
 
 <br />
 <span class="co1"># Password for the selected certificate.</span><br />
 <span class="co1"># Options: any password</span><br />
 <span class="co1"># Default: dependent of the used certificate</span><br />
 <span class="co1">#</span><br />
-<span class="re0">emfstore.keystore.password</span> <span class="sy0">=</span><span class="re1"> yourpassword</span><br />
+<span class="re0">emfstore.keystore.password</span> <span class="sy0">=</span><span class="re1"> 123456</span><br />
 <br />
 <span class="co1"># Defines the used certificate type stored in the keystore</span><br />
 
@@ -240,7 +221,7 @@ EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emf
 <br />
 <span class="co1"># SPFV (Simple property file verification) is a simple mechanism to store user passwords. It's only intended for development purposes.</span><br />
 <span class="co1"># It uses the java properties api and the format for passwords are: &quot;username=userpassword&quot; in each line</span><br />
-<span class="co1"># The default location for this file is {user-folder}/.unicase/emfstore/conf/user.properties</span><br />
+<span class="co1"># The default location for this file is {user-folder}/.emfstore/emfstore/conf/user.properties</span><br />
 <br />
 
 <span class="co1"># Defines the location of the spfv file.</span><br />
@@ -276,9 +257,9 @@ EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emf
 <span class="co1"># Defines whehter post load plugins shall be called or not.</span><br />
 <span class="co1"># Options: true or false</span><br />
 
-<span class="co1"># Default: false</span><br />
+<span class="co1"># Default: true</span><br />
 <span class="co1">#</span><br />
-<span class="re0">emfstore.startup.post.loadlistener</span> <span class="sy0">=</span><span class="re1"> false</span><br />
+<span class="re0">emfstore.startup.post.loadlistener</span> <span class="sy0">=</span><span class="re1"> true</span><br />
 <br />
 <span class="co1">#</span><br />
 <span class="co1"># Deprecated options or options not ment for public use. Please dont change or use these:</span><br />
@@ -289,8 +270,8 @@ EMFStore will look for this file in this folder: <pre>{user-folder}/.unicase/emf
 <span class="co1">#</span><br />
 <span class="re0">emfstore.startup.loadlistener</span> <span class="sy0">=</span><span class="re1"> false</span><br />
 <br />
-<span class="co1"># EMF resource type for storing data. At the moment only one option is allowed: org.unicase.emfstore.storage.XMLStorage</span><br />
-<span class="co1"># emfstore.persistence.resourceStorage = org.unicase.emfstore.storage.XMLStorage</span><br />
+<span class="co1"># EMF resource type for storing data. At the moment only one option is allowed: org.eclipse.emf.emfstore.server.storage.XMLStorage</span><br />
+<span class="co1"># emfstore.persistence.resourceStorage = org.eclipse.emf.emfstore.server.storage.XMLStorage</span><br />
 </div>
 </div>
 
