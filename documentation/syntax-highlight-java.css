@@ -9,7 +9,7 @@
 .java .head {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-bottom: 1px solid #d0d0d0; padding: 2px;}
 .java .foot {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-top: 1px solid #d0d0d0; padding: 2px;}
 .java .imp {font-weight: bold; color: red;}
-.java li, .java .li1 {font-family: 'Courier New', Courier, monospace; color: #000060; background-color: #e0e0e0; padding-bottom: 2px;}
+.java li, .java .li1 {font-family: 'Courier New', Courier, monospace; color: #000060; background-color: #e0e0e0; padding-bottom: 0px;}
 .java .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
 .java .li2 {font-weight: bold; color: #000090; line-height: 90%}
 .java .kw1 {color: #000000; font-weight: bold;color: #660000;font-weight: bold;}
@@ -29,4 +29,3 @@
 .java .me2 {color: #006633;}
 .java .me {1}
 .java span.xtra { display:block; }
-.java li {line-height:1em;}
