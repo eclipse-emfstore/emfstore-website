@@ -1,0 +1,31 @@
+/**
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ */
+.java .de1, .java .de2 {color: #000060; font-weight: normal;}
+.java  {white-space: nowrap;border: 1px dotted #a0a0a0; font-family: 'Courier New', Courier, monospace; font-size: 110%; background-color: #f0f0f0; margin: 0; line-height: 110%; padding: 0;color: #000000;}
+.java a:link {color: #006;}
+.java a:hover {background-color: #d6d6e6;}
+.java .head {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-bottom: 1px solid #d0d0d0; padding: 2px;}
+.java .foot {font-family: Verdana, Arial, sans-serif; color: #808080; font-size: 70%; font-weight: bold; background-color: #f0f0ff; border-top: 1px solid #d0d0d0; padding: 2px;}
+.java .imp {font-weight: bold; color: red;}
+.java li, .java .li1 {font-family: 'Courier New', Courier, monospace; color: #000060; background-color: #e0e0e0; padding-bottom: 2px;}
+.java .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.java .li2 {font-weight: bold; color: #000090; line-height: 90%}
+.java .kw1 {color: #000000; font-weight: bold;color: #660000;font-weight: bold;}
+.java .kw2 {color: #000066; font-weight: bold;}
+.java .kw3 {color: #003399;}
+.java .kw4 {color: #000066; font-weight: bold;}
+.java .co1 {color: #666666; font-style: italic;color: #006600;font-style: normal;}
+.java .co2 {color: #006699;}
+.java .co3 {color: #008000; font-style: italic; font-weight: bold;}
+.java .coMULTI {color: #666666; font-style: italic;color: #006600;font-style: normal;}
+.java .es0 {color: #000099; font-weight: bold;font-weight: normal;}
+.java .br0 {color: #009900;}
+.java .sy0 {color: #339933;}
+.java .st0 {color: #0000ff;color: #0000bb;}
+.java .nu0 {color: #cc66cc;}
+.java .me1 {color: #006633;}
+.java .me2 {color: #006633;}
+.java .me {1}
+.java span.xtra { display:block; }

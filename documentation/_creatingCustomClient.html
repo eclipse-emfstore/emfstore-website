@@ -1,0 +1,148 @@
+<div id="midcolumn">
+<h2>How to create a custom client</h2>
+<p> 
+Follow the steps below to create a client that can fetch, add and commit projects from and to your EMF Store. 
+</p>
+
+<b>Step 1: Get EMF Store and EMF Client Platform</b>
+<p>
+This tutorial assumes that you have running Eclipse with the plugins EMF Store and EMF Client Platform installed.
+Please refer to the tutorials <a href="http://www.eclipse.org/emfclient/documentation/setup.php">here</a> and <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a> to get up and running. 
+</p>
+
+<b>Step 2: Download and import the example client and an example Model</b>
+<p>
+If you followed both tutorials above, you will already have the example model in your workspace. 
+Otherwise, please refer to Step 3 in <a href="http://www.eclipse.org/emfstore/documentation/setup.php">this</a> tutorial.
+You can import the example client the same way using the "Existing Project into Workspace" wizard. 
+</p>
+
+<b>Step 3: Create a new project</b>
+<p>
+Run the EMF Store, explained under Step 4 <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a>, and subsequently run the EMF Client Platform and create a new project in the EMF Client Platform you just started and share it, explained under Step 4 and 5 respectively in <a href="http://www.eclipse.org/emfclient/documentation/setup.php">this</a> tutorial.
+</p>
+
+<b>Step 4: Running the example client</b>
+<p>
+Return to the first instance of Eclipse where you imported the examples and run the example client using <em>"right Click >>> Run As >>> Eclipse Application"</em>.
+You can now update this project in the other Eclipse instance from within the Navigator view. Right-Click the project you created and click <em>Update Project</em>
+<p><img src="images/ecp-navigator-view-update-context-menu.png"></p>
+</p>
+<p>
+The EMF Client Platform will now connect to the EMF Store and fetch the changes made by the example client.
+As a result you should see the following update confirmation.
+<p><img src="images/ecp-project-update-after-running-example-client.png"></p>
+Congratulations, you just accessed and modified your centrally stored project from two different clients.
+In the following sections you will learn how the code of the example client works, and how you can start modifying it to your needs.  
+</p>
+
+<p>
+<b>Application.java: The main extension of your plugin</b>
+<div class="java" style="overflow:auto">
+<ol><li class="li1"><div class="de1"><span class="kw1">package</span> <span class="co2">exampleclient</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.util.List</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">library.Book</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">library.Library</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">library.LibraryFactory</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.client.model.ProjectSpace</span><span class="sy0">;</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.client.model.Usersession</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.client.model.WorkspaceManager</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.client.model.util.EMFStoreClientUtil</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.client.model.util.EMFStoreCommand</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.common.model.Project</span><span class="sy0">;</span></div></li>
+
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.common.model.util.ModelUtil</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.server.exceptions.AccessControlException</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.server.exceptions.EmfStoreException</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.emf.emfstore.server.model.ProjectInfo</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">org.eclipse.equinox.app.IApplication</span><span class="sy0">;</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">org.eclipse.equinox.app.IApplicationContext</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> Application <span class="kw1">implements</span> IApplication <span class="br0">&#123;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aobject+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Object</span></a> start<span class="br0">&#40;</span>IApplicationContext context<span class="br0">&#41;</span> <span class="kw1">throws</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aexception+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Exception</span></a> <span class="br0">&#123;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; WorkspaceManager.<span class="me1">init</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// run a client that commits to the first project it can find on the</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// server</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; runClient<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> IApplication.<span class="me1">EXIT_OK</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> runClient<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throws</span> <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aaccesscontrolexception+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">AccessControlException</span></a>, EmfStoreException <span class="br0">&#123;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Asystem+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Client starting...&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">new</span> EMFStoreCommand<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Override</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> doRun<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">try</span> <span class="br0">&#123;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usersession usersession <span class="sy0">=</span> EMFStoreClientUtil</div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">createUsersession</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; usersession.<span class="me1">logIn</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; List<span class="sy0">&lt;</span>ProjectInfo<span class="sy0">&gt;</span> projectList<span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; projectList <span class="sy0">=</span> usersession.<span class="me1">getRemoteProjectList</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ProjectInfo projectInfo <span class="sy0">=</span> projectList.<span class="me1">iterator</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">next</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ProjectSpace projectSpace <span class="sy0">=</span> usersession</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<span class="me1">checkout</span><span class="br0">&#40;</span>projectInfo<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Project project <span class="sy0">=</span> projectSpace.<span class="me1">getProject</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Abook+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">Book</span></a> book <span class="sy0">=</span> LibraryFactory.<span class="me1">eINSTANCE</span>.<span class="me1">createBook</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; book.<span class="me1">setTitle</span><span class="br0">&#40;</span><span class="st0">&quot;NEW TITLE&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; project.<span class="me1">addModelElement</span><span class="br0">&#40;</span>book<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; projectSpace.<span class="me1">commit</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Library library <span class="sy0">=</span> LibraryFactory.<span class="me1">eINSTANCE</span>.<span class="me1">createLibrary</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; project.<span class="me1">addModelElement</span><span class="br0">&#40;</span>library<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; library.<span class="me1">getBooks</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">add</span><span class="br0">&#40;</span>book<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; projectSpace.<span class="me1">commit</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Asystem+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">System</span></a>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">&#40;</span><span class="st0">&quot;Client run completed.&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> <span class="kw1">catch</span> <span class="br0">&#40;</span><a href="http://www.google.com/search?hl=en&amp;q=allinurl%3Aaccesscontrolexception+java.sun.com&amp;btnI=I%27m%20Feeling%20Lucky"><span class="kw3">AccessControlException</span></a> e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ModelUtil.<span class="me1">logException</span><span class="br0">&#40;</span>e<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> <span class="kw1">catch</span> <span class="br0">&#40;</span>EmfStoreException e<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ModelUtil.<span class="me1">logException</span><span class="br0">&#40;</span>e<span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span>.<span class="me1">run</span><span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> stop<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">// TODO Auto-generated method stub</span></div></li>
+
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li>
+</ol>
+</div>
+</p>
+ 
+</div>
+
