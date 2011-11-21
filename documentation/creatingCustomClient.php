@@ -13,7 +13,7 @@
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-java.css"/>');
 	
-	$pageTitle 		= "How to create a custom client";
+	$pageTitle 		= "EMF Store - How to create a custom client";
 
 	$html  = $html  =file_get_contents('_creatingCustomClient.html');
 	# Generate the web page

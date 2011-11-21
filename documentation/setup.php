@@ -10,7 +10,7 @@
  *    
  *******************************************************************************/
 
-	$pageTitle 		= "EMF Store - Getting started";
+	$pageTitle 		= "EMF Store - How to set up and run the EMF Store";
 
 	$html  = $html  =file_get_contents('_setup.html');
 	# Generate the web page

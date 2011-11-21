@@ -12,7 +12,7 @@
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-properties.css"/>');
 
-	$pageTitle 		= "EMF Store Configuration";
+	$pageTitle 		= "EMF Store - How to configure the EMF Store";
 
 	$html  = $html  =file_get_contents('_config.html');
 	# Generate the web page

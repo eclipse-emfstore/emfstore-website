@@ -19,7 +19,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 
 <h3>Tutorials</h3>
 <li><a href="documentation/setup.php">How to set up and run the EMF Store</a></li>
-<li><a href="documentation/config.php">EMF Store Configuration</a></li>
+<li><a href="documentation/config.php">How to configure the EMF Store</a></li>
 <li><a href="documentation/creatingCustomClient.php">How to create a custom client</a></li>
 
 
