@@ -30,9 +30,10 @@
 	$Nav->addCustomNav("Download", "/emfstore/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emfstore/communication.php", "_blank", 3);
 	$Nav->addCustomNav("Getting started", "/emfstore/gettingstarted.php", "_blank", 3);
+	$Nav->addCustomNav("Documentation", "/emfstore/documentation.php", "_self");
 	$Nav->addCustomNav("Getting involved", "/emfstore/gettinginvolved.php", "_blank", 3);
-	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store", "_blank", 3);
 	$Nav->addCustomNav("Support", "/emfstore/support.php", "_blank", 3);
+	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store", "_blank", 3);
 
 	# Define keywords, author and title here, or in each PHP page specifically
 	$pageKeywords	= "EMFStore, EMF, modeling, Eclipse, Model, Repository, CDO";
@@ -47,9 +48,10 @@
 	$Menu->addMenuItem("Download", "/emfstore/download.php", "_self");
 	$Menu->addMenuItem("Communication", "/emfstore/communication.php", "_self");
 	$Menu->addMenuItem("Getting started", "/emfstore/gettingstarted.php", "_self");
+	$Menu->addMenuItem("Documentation", "/emfstore/documentation.php", "_self");
 	$Menu->addMenuItem("Getting involved", "/emfstore/gettinginvolved.php", "_self");
-	$Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store", "_self");
 	$Menu->addMenuItem("Support", "/emfstore/support.php", "_self");
+	$Menu->addMenuItem("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store", "_self");
 	# $Menu->addMenuItem("Documentation", "/emfstore/documentation.php", "_self");
 	# $Menu->addMenuItem("Support", "/emfstore/support.php", "_self");
 	# $Menu->addMenuItem("Developers", "/emfstore/developers", "_self");
