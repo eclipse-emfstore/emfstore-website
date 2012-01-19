@@ -34,7 +34,7 @@
      <preamble>
          <html:div>EMFStore has been contributed to Eclipse considered as feature complete. Therefore for the release we work on stability and the API</html:div>
      </preamble>
-    <theme name="Stability and API cleanness">
+    <theme name="Stability and API cleanliness">
         <description>...(optional) html...</description>
         <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
            ...(optional alternate) html...</committed>
