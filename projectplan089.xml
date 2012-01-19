@@ -19,16 +19,16 @@
       <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
       <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
       <milestone date="2/10/2012" milestone="0.8.9"/>
-      <postamble><html:div>html content</html:div></postamble>
+      <postamble><html:div></html:div></postamble>
    </release_milestones>
    <target_environments>
-     <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+     <html:div>The 0.8.9 release targets Eclipse Indigo and EMF 2.6</html:div>
      <internationalization>
-          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+          <html:div>The EMFStore offers only a few user visible components. It can be used and integrated completely headless. The UI  does currently not support internationalization.</html:div>
      </internationalization>
    </target_environments>
    <compatibility_with_previous_releases>
-       <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+       <html:div>The release contains minor API improvements compared to previous versions.</html:div>
    </compatibility_with_previous_releases>
    <themes_and_priorities>
      <preamble>
