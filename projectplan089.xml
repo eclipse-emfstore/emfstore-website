@@ -34,9 +34,9 @@
      <preamble>
          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
      </preamble>
-     <theme name="Appealing to the Broader Community">
+    <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
-        <committed bugzilla="...(recommended) bugzilla search url...">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling;query_format=advanced;product=EMFT.emf-store;target_milestone=0.8.9.M920;list_id=143374">
            ...(optional alternate) html...</committed>
         <proposed bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</proposed>
