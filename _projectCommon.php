@@ -30,7 +30,6 @@
 	$Nav->addCustomNav("Download", "/emfstore/download.php", "_self", 3);
 	$Nav->addCustomNav("Communication", "/emfstore/communication.php", "_blank", 3);
 	$Nav->addCustomNav("Getting started", "/emfstore/gettingstarted.php", "_blank", 3);
-	$Nav->addCustomNav("Documentation", "/emfstore/documentation.php", "_self");
 	$Nav->addCustomNav("Getting involved", "/emfstore/gettinginvolved.php", "_blank", 3);
 	$Nav->addCustomNav("Support", "/emfstore/support.php", "_blank", 3);
 	$Nav->addCustomNav("About", "http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store", "_blank", 3);
