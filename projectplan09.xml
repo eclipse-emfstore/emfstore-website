@@ -43,6 +43,8 @@
         <deferred bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</deferred>
      </theme>
-     
+        <appendix name="Project Refactoring">
+     ...html...
+   </appendix>	
    	
  </plan>
