@@ -36,9 +36,9 @@
      </preamble>
     <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
-        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="...(recommended) bugzilla search url...">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</deferred>
