@@ -43,15 +43,7 @@
         <deferred bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</deferred>
      </theme>
-     <theme name="Design for Extensibility">
-        <description>...(optional) html...</description>
-        <committed bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</committed>
-        <proposed bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</proposed>
-        <deferred bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</deferred>
-     </theme>
+     
    </themes_and_priorities>
    <appendix name="Project Refactoring">
      ...html...
