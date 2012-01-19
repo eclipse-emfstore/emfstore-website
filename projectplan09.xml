@@ -2,56 +2,47 @@
 <?xml-stylesheet type="text/xsl" href="project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
       name="Project Name">
-   <release projectid="emft.emfstore" version="1.0"/>
+   <release projectid="modeling.emft.emfstore" version="0.8.9"/>
    <introduction>
-     <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+     <html:div>This plan describes the 0.8.9 Eclipse release of the EMFStore. The main goals of the release are to improve stability and to clean the APIs of EMFStore</html:div>
    </introduction>
    <release_deliverables>
-     <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+     <html:div>The EMFStore project delivers a model repository for EMF model instances. It supports versioning and collaboration on this models. The main focus is on offline collaboration. Therefore the EMFStore supports confilct detection and merging on models.</html:div>
    </release_deliverables>
    <release_milestones>
       <preamble>
-         <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+         <html:div></html:div>
       </preamble>
-      <milestone date="7/1/2008" milestone="M1"><html:div>optional html</html:div></milestone>
-      <milestone date="8/1/2008" milestone="M2"><html:div>optional html</html:div></milestone>
-      <milestone date="9/1/2008" milestone="RC1"><html:div>optional html</html:div></milestone>
-      <milestone date="6/28/2009" milestone="1.0"/>
-      <postamble><html:div>html content</html:div></postamble>
+      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
+      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
+      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
+      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
+      <milestone date="2/10/2012" milestone="0.8.9"/>
+      <postamble><html:div></html:div></postamble>
    </release_milestones>
    <target_environments>
-     <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+     <html:div>The 0.8.9 release targets Eclipse Indigo and EMF 2.6</html:div>
      <internationalization>
-          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+          <html:div>The EMFStore offers only a few user visible components. It can be used and integrated completely headless. The UI  does currently not support internationalization.</html:div>
      </internationalization>
    </target_environments>
    <compatibility_with_previous_releases>
-       <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+       <html:div>The release contains minor API improvements compared to previous versions.</html:div>
    </compatibility_with_previous_releases>
    <themes_and_priorities>
      <preamble>
          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
      </preamble>
-     <theme name="Appealing to the Broader Community">
+     <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
-        <committed bugzilla="...(recommended) bugzilla search url...">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling;query_format=advanced;product=EMFT.emf-store;target_milestone=0.8.9.M920;list_id=143374">
            ...(optional alternate) html...</committed>
         <proposed bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</deferred>
      </theme>
-     <theme name="Design for Extensibility">
-        <description>...(optional) html...</description>
-        <committed bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</committed>
-        <proposed bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</proposed>
-        <deferred bugzilla="...(recommended) bugzilla search url...">
-           ...(optional alternate) html...</deferred>
-     </theme>
-   </themes_and_priorities>
-   <appendix name="Project Refactoring">
-     ...html...
-   </appendix>	
+     
+   	
  </plan>
