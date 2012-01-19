@@ -1,0 +1,18 @@
+<div id="midcolumn">
+<h2>Modeling Guidelines</h2>
+
+What you need to do and should not do:
+<ul>
+<li>Unsettable features: Do NOT set unsetable to true for any feature. Unsetable features are not fully supported by EMFStore.</li>
+<li>Generics: Do NOT use generics in the Ecore. Generics are not fully supported by EMFStore.</li>
+<li>Carefully think about overriding a getter or setter, since these methods are used to store data and to synchronize the clients in EMFStore. For example, if your getter will do a default initialization it will do this on every resource load. 
+</ul>
+
+What we recommend:
+<ul>
+<li>Proxies: To support resource splitting and speeding up save and load of resources we recommend to enable resolveProxies for all references in your Ecore and to enable the property "ContainmentProxies" in your genmodel. The property resolveProxies is already set by default while containmentProxies are disable by default.</li>
+</ul>
+
+</div>
+
+

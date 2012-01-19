@@ -17,17 +17,15 @@
 <h2>Documentation</h2>
 We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
 
-<h3>Tutorials</h3>
+<h3>Framework User Documentation</h3>
 <li><a href="documentation/setup.php">How to set up and run the EMF Store</a></li>
 <li><a href="documentation/config.php">How to configure the EMF Store</a></li>
 <li><a href="documentation/creatingCustomClient.php">How to create a custom client</a></li>
+<li><a href="documentation/modelingGuidelines.php">Guidelines how to create your model to use it with EMFStore</a></li>
 
 
-
-
-
-
-
+<h3>Framework Developer Documentation</h3>
+We keep this information in our <a href="http://wiki.eclipse.org/EMFStoreDevelopers">developer wiki</a>.
 
  
 </div>
