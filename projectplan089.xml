@@ -13,10 +13,12 @@
       <preamble>
          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
       </preamble>
-      <milestone date="7/1/2008" milestone="M1"><html:div>optional html</html:div></milestone>
-      <milestone date="8/1/2008" milestone="M2"><html:div>optional html</html:div></milestone>
-      <milestone date="9/1/2008" milestone="RC1"><html:div>optional html</html:div></milestone>
-      <milestone date="6/28/2009" milestone="1.0"/>
+      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
+      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
+      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
+      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
+      <milestone date="2/10/2012" milestone="0.8.9"/>
       <postamble><html:div>html content</html:div></postamble>
    </release_milestones>
    <target_environments>
