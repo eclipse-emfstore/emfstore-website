@@ -7,7 +7,7 @@
      <html:div>This plan describes the 0.8.9 Eclipse release of the EMFStore. The main goals of the release are to improve stability and to clean the APIs of EMFStore</html:div>
    </introduction>
    <release_deliverables>
-     <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+     <html:div>The EMFStore project delivers a model repository for EMF model instances. It supports versioning and collaboration on this models. The main focus is on offline collaboration. Therefore the EMFStore supports confilct detection and merging on models.</html:div>
    </release_deliverables>
    <release_milestones>
       <preamble>
