@@ -32,7 +32,7 @@
    </compatibility_with_previous_releases>
    <themes_and_priorities>
      <preamble>
-         <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+         <html:div>EMFStore has been contributed to Eclipse considered as feature complete. Therefore for the release we work on stability and the API</html:div>
      </preamble>
     <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
