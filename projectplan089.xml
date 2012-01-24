@@ -11,11 +11,11 @@
    </release_deliverables>
    <release_milestones>
       <preamble>
-         <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div>
+         <html:div></html:div>
       </preamble>
       <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
       <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
-      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
+      <milestone date="20/1/2012" milestone="M920"><html:div></html:div></milestone>
       <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
       <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
       <milestone date="2/10/2012" milestone="0.8.9"/>
@@ -36,7 +36,7 @@
      </preamble>
     <theme name="Stability and API cleanliness">
         <description>...(optional) html...</description>
-        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920&amp;target_milestone=0.8.9.M921">
            ...(optional alternate) html...</committed>
         <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
            ...(optional alternate) html...</proposed>
