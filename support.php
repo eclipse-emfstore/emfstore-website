@@ -17,9 +17,8 @@
 <ul>
 <li><b><a href="gettingstarted.php"
 		title="Getting Started">Getting Started</a></b> - first steps with EMFStore</li>
-	<li><b><a href="http://code.google.com/p/unicase/wiki/EMFStoreDocumentation"
-		title="Documentation">Documentation</a></b> - read about
-	the details (Please note that this page has not been moved to Eclipse yet</li>
+	<li><b><a href="http://eclipse.org/emfstore/documentation.php"
+		title="Documentation">Documentation</a></b></li>
 	<li><b><a
 		href="http://www.eclipse.org/forums/index.php/f/19/"
 		title="http://www.eclipse.org/forums/index.php/f/19/"
