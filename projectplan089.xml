@@ -7,22 +7,20 @@
      <html:div>This plan describes the 0.8.9 Eclipse release of the EMFStore. The main goals of the release are to improve stability and to clean the APIs of EMFStore</html:div>
    </introduction>
    <release_deliverables>
-     <html:div>The EMFStore project delivers a model repository for EMF model instances. It supports versioning and collaboration on this models. The main focus is on offline collaboration. Therefore the EMFStore supports confilct detection and merging on models.</html:div>
+     <html:div>The EMFStore project delivers a model repository for EMF model instances. It supports versioning and collaboration on this models. The main focus is on offline collaboration. Therefore the EMFStore supports confilct detection and merging on models. The release deliverable is an update site. This site will also include the EMF Client Platform.</html:div>
    </release_deliverables>
    <release_milestones>
       <preamble>
          <html:div></html:div>
       </preamble>
-      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
-      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
-      <milestone date="20/1/2012" milestone="M920"><html:div></html:div></milestone>
-      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
-      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
-      <milestone date="2/10/2012" milestone="0.8.9"/>
+      <milestone date="24/1/2012" milestone="M920"><html:div></html:div></milestone>
+      <milestone date="7/2/2012" milestone="M921"><html:div></html:div></milestone>
+      <milestone date="14/2/2012" milestone="M923"><html:div></html:div></milestone>
+      <milestone date="2/3/2012" milestone="0.8.9"/>
       <postamble><html:div></html:div></postamble>
    </release_milestones>
    <target_environments>
-     <html:div>The 0.8.9 release targets Eclipse Indigo and EMF 2.6</html:div>
+     <html:div>The 0.8.9 release targets Eclipse Indigo and EMF 2.5</html:div>
      <internationalization>
           <html:div>The EMFStore offers only a few user visible components. It can be used and integrated completely headless. The UI  does currently not support internationalization.</html:div>
      </internationalization>
@@ -36,9 +34,9 @@
      </preamble>
     <theme name="Stability and API cleanliness">
         <description>...(optional) html...</description>
-        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920&amp;target_milestone=0.8.9.M921">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=502731;classification=Modeling;query_format=advanced;target_milestone=0.8.9.M920;target_milestone=0.8.9.M921;target_milestone=0.8.9.M922;product=EMFT.emf-store">
            ...(optional alternate) html...</committed>
-        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=VERIFIED&amp;product=EMFT.emf-store&amp;target_milestone=0.8.9.M920">
+        <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=502731;classification=Modeling;query_format=advanced;target_milestone=0.8.9.M923;product=EMFT.emf-store">
            ...(optional alternate) html...</proposed>
         <deferred bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;product=EMFT.emf-store&amp;target_milestone=0.9.0">
            ...(optional alternate) html...</deferred>
