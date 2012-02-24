@@ -33,6 +33,8 @@
 <li><a href="http://download.eclipse.org/emf-store/archive">http://download.eclipse.org/emf-store/archive</a>.</li>
 </ul>
 
+A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. 
+
 To learn how to setup and run EMF Store read the tutorial <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a>.<br />
 
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
