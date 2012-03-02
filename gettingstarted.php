@@ -54,7 +54,7 @@ The EMFStore framework can be installed from <a href="download.php">here</a>.
 </div>
 </p>
 <h3>More Documentation</h3>
-<p>Please note that we are currently moving the documentation to the Eclipse website. Currently, you can find it <a href="http://code.google.com/p/unicase/wiki/EMFStoreDocumentation">here</a>. 
+<p>Please note that we are currently moving the documentation to the Eclipse website. Currently, you can find it <a href="http://eclipse.org/emfstore/documentation.php">here</a>. 
 EOHTML;
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
