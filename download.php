@@ -18,19 +18,36 @@
 <p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 <p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
 
-<h3>Milestone Builds</h3>
-<p>EMF Store has moved to Eclipse. Currently we are preparing our first official Eclipse release. Although, EMF Store has been developed 3 years before it moved to Eclipse. 
+<h3>Release Builds</h3>
+<p>
 
-<p>You can get the the latest milestone build from this update site:
+<p>You can get the the latest release build from this update site:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/latest">http://download.eclipse.org/emf-store/latest</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
+</ul>
+
+<p>An archive of release builds is available here:
+
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive">http://download.eclipse.org/emf-store/releases/archive</a>.</li>
+</ul>
+
+A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
+
+<h3>Milestone Builds</h3>
+<p>
+
+<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site:
+
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/latest</a>.</li>
 </ul>
 
 <p>An archive of milestone builds is available here
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/archive">http://download.eclipse.org/emf-store/archive</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive">http://download.eclipse.org/emf-store/milestones/archive</a>.</li>
 </ul>
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
