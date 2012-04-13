@@ -38,7 +38,7 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 <h3>Milestone Builds</h3>
 <p>
 
-<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site:
+<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:
 
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/latest</a>.</li>
