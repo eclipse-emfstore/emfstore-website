@@ -63,5 +63,5 @@
 	$App->Promotion = TRUE;
 	
 	# If you have Google Analytics code, use it here
-	# $App->SetGoogleAnalyticsTrackingCode("YOUR_CODE");
+	$App->SetGoogleAnalyticsTrackingCode("UA-31076657-1");
 ?>
