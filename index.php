@@ -18,7 +18,7 @@
 	$pageKeywords	= "eclipse, project, EMF, EMFStore, Store, Model, Repository";
 	$pageAuthor		= "Jonas Helming";
 	$pageTitle 		= "EMFStore project home";
-	
+	$App->SetGoogleAnalyticsTrackingCode("UA-31076657-1");
 	
 	// 	# Paste your HTML content between the EOHTML markers!
 	$html = file_get_contents('pages/_index.html');
