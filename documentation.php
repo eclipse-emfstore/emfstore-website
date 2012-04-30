@@ -22,6 +22,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/config.php">How to configure the EMF Store</a></li>
 <li><a href="documentation/creatingCustomClient.php">How to create a custom client</a></li>
 <li><a href="documentation/modelingGuidelines.php">Guidelines how to create your model to use it with EMFStore</a></li>
+<li><a href="http://wiki.eclipse.org/How_to_create_a_release_of_EMFStore">How to create a release of EMFStore</a></li>
 <li><a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/264/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">EMFStore JavaDoc</a></li>
 
 
