@@ -4,7 +4,7 @@
       name="Project Name">
    <release projectid="modeling.emft.emfstore" version="0.8.9"/>
    <introduction>
-     <html:div>This plan describes the 0.8.9 Eclipse release of the EMFStore. The main goals of the release are to improve stability and to clean the APIs of EMFStore</html:div>
+     <html:div>This plan describes the 0.9.0 Eclipse release of the EMFStore. The main goals of the release are to improve stability and to clean the APIs of EMFStore</html:div>
    </introduction>
    <release_deliverables>
      <html:div>The EMFStore project delivers a model repository for EMF model instances. It supports versioning and collaboration on this models. The main focus is on offline collaboration. Therefore the EMFStore supports confilct detection and merging on models.</html:div>
@@ -13,12 +13,8 @@
       <preamble>
          <html:div></html:div>
       </preamble>
-      <milestone date="5/1/2012" milestone="M911"><html:div></html:div></milestone>
-      <milestone date="12/1/2012" milestone="M912"><html:div></html:div></milestone>
-      <milestone date="20/1/2012" milestone="M913"><html:div></html:div></milestone>
-      <milestone date="27/1/2012" milestone="RC1"><html:div></html:div></milestone>
-      <milestone date="2/3/2012" milestone="RC2"><html:div></html:div></milestone>
-      <milestone date="2/10/2012" milestone="0.8.9"/>
+      <milestone date="5/7/2012" milestone="M949"><html:div></html:div></milestone>
+      <milestone date="5/15/2012" milestone="0.9.0"/>
       <postamble><html:div></html:div></postamble>
    </release_milestones>
    <target_environments>
@@ -36,7 +32,7 @@
      </preamble>
      <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
-        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling;query_format=advanced;product=EMFT.emf-store;target_milestone=0.8.9.M920;list_id=143374">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling;query_format=advanced;product=EMFT.emf-store;target_milestone=0.8.9.*;list_id=143374">
            ...(optional alternate) html...</committed>
         <proposed bugzilla="...(recommended) bugzilla search url...">
            ...(optional alternate) html...</proposed>
