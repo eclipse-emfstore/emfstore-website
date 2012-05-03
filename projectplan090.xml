@@ -32,7 +32,7 @@
      </preamble>
      <theme name="Stability and API cleanness">
         <description>...(optional) html...</description>
-        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling;query_format=advanced;product=EMFT.emf-store;target_milestone=0.9.0;list_id=143374">
+        <committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?classification=Modeling&amp;query_format=advanced&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;product=EMFT.emf-store&amp;target_milestone=0.9.0">
            ...(optional alternate) html...</committed>
        
      </theme>
