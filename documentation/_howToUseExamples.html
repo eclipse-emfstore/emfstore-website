@@ -11,12 +11,9 @@ Follow the steps below to setup emfstore, import the example projects into works
 	<ul>
 		<li><b>Basic example (hello world)</b> - demos how to use the EMFStores API
 			<ul>
-				<li>Creates a project, shares it with the server, adds a model element to it and commits the changes.</li>
-				<li>Checkouts the same project twice as project2, modifies the element and commits the changes to the server.</li>
-				<li>Asserts that project1 still has the old value.</li>
+				<li>Creates a project, shares it with the server, adds EObjects to the project and commits the changes.</li>
+				<li>Checkouts the same project twice as project2, modifies an EObject and commits the changes to the server.</li>
 				<li>Updates project1 from the server and asserts, that the project1 values now equals project2.</li>
-				<li>Creates a conflict by changing value of project1 and project2 and committing both projects.</li>
-				<li>Handles "conflict exception" by reverting changes and updating project2.</li>
 			</ul> 
 		</li><br>
 		<li><b>Merging example</b> - demos how conflicts can be produced, handled and resolved
