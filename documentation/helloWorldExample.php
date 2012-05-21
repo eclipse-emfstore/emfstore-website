@@ -15,7 +15,7 @@
 	
 	$pageTitle 		= "EMF Store - Hello World Example";
 
-	$html  = $html  =file_get_contents('_helloWorldExample.html');
+	$html  = file_get_contents('_helloWorldExample.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
