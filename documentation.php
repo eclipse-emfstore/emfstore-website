@@ -15,8 +15,10 @@
 	$html  = <<<EOHTML
 <div id="midcolumn">
 <h2>Documentation</h2>
+<p>
 We are always trying to keep the documentation up-to-date. If you find anything outdated, wrong or missing, please do not hesitate to <a href=communication.php">contact us</a>.
-
+</p>
+<p>
 <h3>Framework User Documentation</h3>
 <li><a href="documentation/setup.php">How to set up and run the EMF Store</a></li>
 <li><a href="documentation/config.php">How to configure the EMF Store</a></li>
@@ -27,7 +29,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="http://wiki.eclipse.org/How_to_create_a_release_of_EMFStore">How to create a release of EMFStore</a></li>
 <li><a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/264/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">EMFStore JavaDoc</a></li>
 
-
+</p>
 <h3>Framework Developer Documentation</h3>
 We keep this information in our <a href="http://wiki.eclipse.org/EMFStoreDevelopers">developer wiki</a>.
 
