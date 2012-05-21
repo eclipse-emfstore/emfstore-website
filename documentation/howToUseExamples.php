@@ -12,6 +12,7 @@
 
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-java.css"/>');
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../style.css"/>');
 	
 	$pageTitle 		= "EMF Store - How to use the examples";
 

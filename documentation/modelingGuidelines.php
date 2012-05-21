@@ -12,7 +12,7 @@
 
 	$pageTitle 		= "EMF Store - How to set up and run the EMF Store";
 
-	$html  = $html  =file_get_contents('_modelingGuidelines.html');
+	$html  = file_get_contents('_modelingGuidelines.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

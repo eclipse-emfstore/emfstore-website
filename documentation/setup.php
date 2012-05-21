@@ -10,8 +10,10 @@
  *    
  *******************************************************************************/
 
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../style.css"/>');
+	
 	$pageTitle 		= "EMF Store - How to set up and run the EMF Store";
-
+	
 	$html  = $html  =file_get_contents('_setup.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);

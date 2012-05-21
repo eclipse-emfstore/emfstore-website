@@ -10,11 +10,11 @@
  *    
  *******************************************************************************/
 
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-properties.css"/>');
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../style.css"/>');
 
 	$pageTitle 		= "EMF Store - How to configure the EMF Store";
 
-	$html  = $html  =file_get_contents('_config.html');
+	$html  = file_get_contents('_config.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
