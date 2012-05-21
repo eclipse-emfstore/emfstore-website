@@ -320,14 +320,15 @@ Enter key password for <emfstoreServer>
 </pre>
 </div>
 <p>
-In the next step you have to export the server's public key:
+<br/>In the next step you have to export the server's public key:
 </p>
 <div class="properties" style="overflow:auto">
 <pre>
 keytool -export -rfc -keystore emfstoreServer.keystore -alias emfstoreServer -file emfstoreServer.public-key 
 </pre>
 </div>
-<p>If you want to deploy the client and ship an initial keystore there is one more step left, 
+<p>
+<br/>If you want to deploy the client and ship an initial keystore there is one more step left, 
 otherwise you can publish the public key and use the - planned - import function of the client.</p>
 <p>
 To create an initial keystore for the client again use the keytool:
@@ -338,7 +339,7 @@ C:\Users\User>keytool -import -alias "youralias" -keystore emfstoreClient.keysto
 </pre>
 </div>
 <p>
-Then follow the instructions.
+<br/>Then follow the instructions once again.
 </p>
 <p>
 <b>Note</b>: As password for the client's keystore use the password specified in KeyStoreManager in the workspace plugin. And you can use any format for your alias
@@ -359,7 +360,7 @@ Certificate was added to keystore
 </pre> 
 </div>
 <p>
-And then feel safe ;)
+<br/>And then feel safe ;)
 </p>
 <p>
 These certificates are also used to encrypt client's password stored in the user's profile. So only the server is able to decrypt and validate them. This allows to avoid saving them in clear text.
