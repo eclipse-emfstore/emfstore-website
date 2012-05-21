@@ -319,7 +319,9 @@ Enter key password for <emfstoreServer>
         (RETURN if same as keystore password):  
 </pre>
 </div>
+<p>
 In the next step you have to export the server's public key:
+</p>
 <div class="properties" style="overflow:auto">
 <pre>
 keytool -export -rfc -keystore emfstoreServer.keystore -alias emfstoreServer -file emfstoreServer.public-key 
@@ -332,10 +334,12 @@ To create an initial keystore for the client again use the keytool:
 </p>
 <div class="properties" style="overflow:auto">
 <pre>
-keytool -import -alias "youralias" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
+C:\Users\User>keytool -import -alias "youralias" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
 </pre>
 </div>
-and follow the instructions.
+<p>
+Then follow the instructions.
+</p>
 <p>
 <b>Note</b>: As password for the client's keystore use the password specified in KeyStoreManager in the workspace plugin. And you can use any format for your alias
 </p>
