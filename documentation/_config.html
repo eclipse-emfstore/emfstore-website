@@ -290,8 +290,11 @@ keytool -genkey -keyalg RSA -keystore emfstoreServer.keystore -alias emfstoreSer
 </pre>
 <p>
 Then follow the instructions.
+</p>
+<p>
 <b>Note</b>: You have to name your keystore emfstoreServer.keystore, otherwise the server won't find it. Keytool requests a password, this password has to correspond with the keystore password specified in your server configuration.
 </p> 
+<div class="properties" style="overflow:auto">
 <pre>
 C:\Users\User>keytool -genkey -keyalg RSA -keystore emfstoreServer.keystore -alias emfstoreServer
 Enter keystore password: 123456
@@ -313,6 +316,7 @@ Is CN=John Doe, OU=ExampleOrganization, O=Example, L=ExampleCity, ST=ExampleStat
 Enter key password for <emfstoreServer>
         (RETURN if same as keystore password):  
 </pre>
+</div>
 In the next step you have to export the server's public key: 
 <pre>
 keytool -export -rfc -keystore emfstoreServer.keystore -alias emfstoreServer -file emfstoreServer.public-key 
