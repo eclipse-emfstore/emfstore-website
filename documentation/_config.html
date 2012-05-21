@@ -285,9 +285,11 @@ Just generate the keys following the documentation and then copy them to the giv
 <p>
 Let's start with creating the server's keystore and the private key. Therefore we use the keytool distributed with java's jdk. Use the keytool with following parameters:
 </p>
+<div class="properties" style="overflow:auto">
 <pre>
 keytool -genkey -keyalg RSA -keystore emfstoreServer.keystore -alias emfstoreServer
 </pre>
+</div>
 <p>
 Then follow the instructions.
 </p>
@@ -317,22 +319,27 @@ Enter key password for <emfstoreServer>
         (RETURN if same as keystore password):  
 </pre>
 </div>
-In the next step you have to export the server's public key: 
+In the next step you have to export the server's public key:
+<div class="properties" style="overflow:auto">
 <pre>
 keytool -export -rfc -keystore emfstoreServer.keystore -alias emfstoreServer -file emfstoreServer.public-key 
 </pre>
+</div>
 <p>If you want to deploy the client and ship an initial keystore there is one more step left, 
 otherwise you can publish the public key and use the - planned - import function of the client.</p>
 <p>
 To create an initial keystore for the client again use the keytool:
 </p>
+<div class="properties" style="overflow:auto">
 <pre>
 keytool -import -alias "youralias" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
 </pre>
+</div>
 and follow the instructions.
 <p>
 <b>Note</b>: As password for the client's keystore use the password specified in KeyStoreManager in the workspace plugin. And you can use any format for your alias
 </p>
+<div class="properties" style="overflow:auto">
 <pre>
 C:\Users\User>keytool -import -alias "EMFStore Certificate" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
 Enter keystore password: 654321
@@ -346,6 +353,7 @@ Certificate fingerprints:
 Trust this certificate? [no]:  yes
 Certificate was added to keystore
 </pre> 
+</div>
 <p>
 And then feel safe ;)
 </p>
