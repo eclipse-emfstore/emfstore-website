@@ -250,8 +250,7 @@ EMFStore will look for this file under the following path: <pre>{user-folder}/.e
 <span class="re0">emfstore.accesscontrol.authentication.ldap.2.base</span><span class="sy0">=</span><span class="re1">ou=Personen,ou=IN,o=TUM,c=DE</span><br />
 
 <span class="re0">emfstore.accesscontrol.authentication.ldap.2.searchdn</span><span class="sy0">=</span><span class="re1">uid</span><br />
-<br />
-<br />
+<br /><br />
 <span class="co1">#</span><br />
 <span class="co1"># Plugin configuration.</span><br />
 <span class="co1">#</span><br />
@@ -275,5 +274,79 @@ EMFStore will look for this file under the following path: <pre>{user-folder}/.e
 <span class="co1"># EMF resource type for storing data. At the moment only one option is allowed: org.eclipse.emf.emfstore.server.storage.XMLStorage</span><br />
 <span class="co1"># emfstore.persistence.resourceStorage = org.eclipse.emf.emfstore.server.storage.XMLStorage</span><br />
 </div>
+
+<h2>Creating Keystores for Encryption </h2>
+<p>
+In order to encrypt the transport layer, both, server and client require a keystore containing the private/public key. 
+The server keystore is stored in the EMFStore data directory (default: $HOME/.emfstore/server/profiles/<profilename>). 
+The client keystore is stored in the client data directory (default: $HOME/.emfstore/client/profiles/<profilename>). 
+Just generate the keys following the documentation and then copy them to the given directories.
+</p>
+<p>
+Let's start with creating the server's keystore and the private key. Therefore we use the keytool distributed with java's jdk. Use the keytool with following parameters:
+</p>
+<pre>
+keytool -genkey -keyalg RSA -keystore emfstoreServer.keystore -alias emfstoreServer
+</pre>
+<p>
+Then follow the instructions.
+<b>Note</b>: You have to name your keystore emfstoreServer.keystore, otherwise the server won't find it. Keytool requests a password, this password has to correspond with the keystore password specified in your server configuration.
+</p> 
+<pre>
+C:\Users\User>keytool -genkey -keyalg RSA -keystore emfstoreServer.keystore -alias emfstoreServer
+Enter keystore password: 123456
+What is your first and last name?
+  [Unknown]: John Doe
+What is the name of your organization unit?
+  [Unknown]: ExampleOrganization
+What is the name of your organization?
+  [Unknown]: Example
+What is the name of your City or Locality?
+  [Unknown]: ExampleCity
+What is the name of your State or Province?
+  [Unknown]: ExampleState
+What is the two-letter country code for this unit?
+  [Unknown]: EU
+Is CN=John Doe, OU=ExampleOrganization, O=Example, L=ExampleCity, ST=ExampleState, C=EU correct?
+  [no]: yes
+  
+Enter key password for <emfstoreServer>
+        (RETURN if same as keystore password):  
+</pre>
+In the next step you have to export the server's public key: 
+<pre>
+keytool -export -rfc -keystore emfstoreServer.keystore -alias emfstoreServer -file emfstoreServer.public-key 
+</pre>
+<p>If you want to deploy the client and ship an initial keystore there is one more step left, 
+otherwise you can publish the public key and use the - planned - import function of the client.</p>
+<p>
+To create an initial keystore for the client again use the keytool:
+</p>
+<pre>
+keytool -import -alias "youralias" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
+</pre>
+and follow the instructions.
+<p>
+<b>Note</b>: As password for the client's keystore use the password specified in KeyStoreManager in the workspace plugin. And you can use any format for your alias
+</p>
+<pre>
+C:\Users\User>keytool -import -alias "EMFStore Certificate" -keystore emfstoreClient.keystore -file emfstoreServer.public-key
+Enter keystore password: 654321
+Owner: CN=John Doe, OU=ExampleOrganization, O=Example, L=ExampleCity, ST=ExampleState, C=EU
+Issuer: CN=John Doe, OU=ExampleOrganization, O=Example, L=ExampleCity, ST=ExampleState, C=EU
+Serial number: 48ef625f
+Valid from: Fri Oct 10 16:10:39 CEST 2008 until: Thu Jan 08 15:10:39 CET 2009
+Certificate fingerprints:
+         MD5: 9D:BD:6B:63:08:9C:37:62:6A:F7:0B:2C:E1:BE:4F:7B
+         SHA1: C3:6A:57:86:A0:C4:F4:2D:94:AC:FC:C3:72:18:C7:7C:ED:7A:A9:06
+Trust this certificate? [no]:  yes
+Certificate was added to keystore
+</pre> 
+<p>
+And then feel safe ;)
+</p>
+<p>
+These certificates are also used to encrypt client's password stored in the user's profile. So only the server is able to decrypt and validate them. This allows to avoid saving them in clear text.
+</p> 
 </div>
 
