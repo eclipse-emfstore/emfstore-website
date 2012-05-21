@@ -11,7 +11,7 @@
  *******************************************************************************/
 
 
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-java.css"/>');
+	#$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="syntax-highlight-java.css"/>');
 	
 	$pageTitle 		= "EMF Store - Hello World Example";
 
