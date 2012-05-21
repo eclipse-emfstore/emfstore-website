@@ -9,7 +9,9 @@
  * Contributors:
  *    
  *******************************************************************************/
-
+ 
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../style.css"/>');
+	
 	$pageTitle 		= "EMF Store - How to set up and run the EMF Store";
 
 	$html  = file_get_contents('_modelingGuidelines.html');
