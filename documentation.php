@@ -23,6 +23,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/setup.php">How to set up and run the EMF Store</a></li>
 <li><a href="documentation/config.php">How to configure the EMF Store</a></li>
 <li><a href="documentation/modelingGuidelines.php">Guidelines how to create your model to use it with EMFStore</a></li>
+<li><a href="documentation/howToUseExamples.php">How to use the EMFStore code examples</a></li>
 <li><a href="documentation/helloWorldExample.php">How write a custom "Hello World" client for the EMFStore</a></li>
 <li><a href="documentation/mergingExample.php">How write a custom Merging Strategy for the EMFStore</a></li>
 
