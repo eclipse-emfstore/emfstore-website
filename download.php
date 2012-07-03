@@ -21,11 +21,11 @@
 <h3>Release Builds</h3>
 <p>
 
-<p>You can get the the latest release 0.9.1 from this update site:
+<p>You can get the the latest release 0.9.3 from this update site:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/latest/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/lates</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/lates/site.p2.zip</a>.</li>
 </ul>
 
 <p>An archive of release builds is available here:
