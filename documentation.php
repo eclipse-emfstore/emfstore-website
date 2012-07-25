@@ -26,6 +26,7 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/howToUseExamples.php">How to use the EMFStore code examples</a></li>
 <li><a href="documentation/helloWorldExample.php">How write a custom "Hello World" client for the EMFStore</a></li>
 <li><a href="documentation/mergingExample.php">How write a custom Merging Strategy for the EMFStore</a></li>
+<li><a href="documentation/buildProduct.php">How build your own server product with EMFStore</a></li>
 
 <li><a href="http://wiki.eclipse.org/How_to_create_a_release_of_EMFStore">How to create a release of EMFStore</a></li>
 <li><a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/264/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">EMFStore JavaDoc</a></li>
