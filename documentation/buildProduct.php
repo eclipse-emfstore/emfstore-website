@@ -16,7 +16,7 @@
 	
 	$pageTitle 		= "EMF Store - Build your own server product with EMFStore";
 
-	$html  = $html  =file_get_contents('_mergingExample.html');
+	$html  = $html  =file_get_contents('_buildProduct.html');
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
