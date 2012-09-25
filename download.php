@@ -44,8 +44,8 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 <p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:
 
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/latest</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/latest/site.p2.zip">http://download.eclipse.org/emf-store/milestones/latest/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/latest</a></li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/latest/site.p2.zip">http://download.eclipse.org/emf-store/milestones/latest/site.p2.zip</a></li>
 </ul>
 
 <p>A list of archived milestone builds is available here
@@ -53,19 +53,19 @@ A log of new and noteworthy for every release is available <a href="http://wiki.
 <h6>0.9.3.M3</h6>
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip</a></li>
 </ul>
 
 <h6>0.9.3.M2</h6>
 <ul>
 <li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip</a></li>
 </ul>
 
 <h6>0.9.2.M1</h6>
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1</a>.</li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip</a>.</li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1</a></li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip</a></li>
 </ul>
 
 A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
