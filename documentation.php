@@ -29,7 +29,6 @@ We are always trying to keep the documentation up-to-date. If you find anything 
 <li><a href="documentation/buildProduct.php">How build your own server product with EMFStore</a></li>
 
 <li><a href="http://wiki.eclipse.org/How_to_create_a_release_of_EMFStore">How to create a release of EMFStore</a></li>
-<li><a href="https://hudson.eclipse.org/hudson/job/emf-emfstore-integration/264/artifact/git/org.eclipse.emf.emfstore.core/org.eclipse.emf.emfstore.site/javadoc/index.html">EMFStore JavaDoc</a></li>
 
 </p>
 <h3>Framework Developer Documentation</h3>
