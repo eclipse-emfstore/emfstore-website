@@ -73,7 +73,9 @@
 		tutorial</a> to clone GIT repositories. <br><br>
 		Now, you can import the projects from the cloned GIT repository with EGit. See <a href="http://wiki.eclipse.org/ImportGitProjects">here</a> how to
 			import projects from a GIT repository<br>
-		<br> <b>Step 3: Setting the Target Platform</b>
+		<br> 
+	
+	<b>Step 3: Setting the Target Platform</b>
 	<p>
 		Please download <a
 			href="http://dl.dropbox.com/u/23674036/emfstoretargetplatform.zip">this
@@ -90,12 +92,11 @@
 	
 
 
-	<b>Step 4: Checkstyle Configuration</b>
+	<b>Step 4: Configuring Checkstyle and setting the formatter</b>
 	
 		<br><br>The final step is to create a style configurations.  We are using checkstyle 5.5. Please open the global preferences
 		(Window => Preferences) and add a new Checkstyle project relative configuration named
 		"emfstoreStyle" poiting to the project EMFStoreDeveloper and its file coding/emfstoreStyle5.x.xml.
-	
 
 	<p>The EMF Store project also uses specific Java formatting
 		settings to avoid whitespace conflicts. All existing plugins are
@@ -112,6 +113,11 @@
 	</ol>
 	<p>Now the EMF Store specific auto-formatting rules should be
 		applied every time format is called.</p>
+
+	<b>Step 5: Setting UTF-8 Encoding and line delimiters</b>
+	
+		<br><br>In order to improve compatibility with different Operating Systems and their default settings for text encoding and line delimiters, you need to change your default Eclipse Settings to UTF-8 and Unix line delimiters. 
+		<p><img  src="images/checkstyle.png" ></p>
 
 	<b>Run the EMFStore</b>
 	<p>
