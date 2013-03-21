@@ -50,11 +50,7 @@
 			developer</li>
 		<li>org.eclipse.emf.emfstore.other.git
 			(ssh://committer_id@git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.other.git):
-			Contains additional optional features (e.g. XMI Workspace)</li>
-		<li>org.eclipse.emf.emfstore.releng.git
-			(ssh://committer_id@git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.releng.git):
-			Contains release engineering resources such as features and updates
-			sites</li>
+			Contains additional optional features (e.g. XMI Workspace)</li>		
 	</ul>
 	If you want to use GIT as an anonymous user (read only) please use the
 	following URIs:
@@ -62,11 +58,9 @@
 		<li>org.eclipse.emf.emfstore.core.git
 			(git://git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.core.git)</li>
 		<li>org.eclipse.emf.emfstore.other.git
-			(git://git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.other.git)</li>
-		<li>org.eclipse.emf.emfstore.releng.git
-			(git://git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.releng.git)</li>
+			(git://git.eclipse.org/gitroot/emf-store/org.eclipse.emf.emfstore.other.git)</li>		
 	</ul>
-	In our team we often  resort to using the commandline for Git since it
+	In our team we often resort to using the commandline for Git since it
 	works more reliably. On Windows you might use <a href="http://eclipse-cs.sf.net/update/">msysgit</a>. If you want to use EGit in Eclipse for cloning the repos, please
 	refer to <a
 		href="http://wiki.eclipse.org/EGit/User_Guide/Remote#Cloning_remote_Repositories">this
@@ -75,24 +69,7 @@
 			import projects from a GIT repository<br>
 		<br> 
 	
-	<b>Step 3: Setting the Target Platform</b>
-	<p>
-		Please download <a
-			href="http://dl.dropbox.com/u/23674036/emfstoretargetplatform.zip">this
-			target platform</a> unzip this folder in your workspace and set the
-		target:
-	<ul>
-		<li>Select Import => Existing Projects into Workspace</li>
-		<li>Select the downloaded archive and the contained project
-			"target"</li>
-		<li>After import, open the target project, double click the
-			target definition file and click "set as target" in the right upper
-			corner</li>
-	</ul>
-	
-
-
-	<b>Step 4: Configuring Checkstyle and setting the formatter</b>
+	<b>Step 3: Configuring Checkstyle and setting the formatter</b>
 	
 		<br><br>The step is to create a style configurations.  We are using checkstyle 5.5. Please open the global preferences
 		(Window => Preferences) and add a new Checkstyle project relative configuration named
@@ -114,7 +91,7 @@
 	<p>Now the EMF Store specific auto-formatting rules should be
 		applied every time format is called.</p>
 
-	<b>Step 5: Setting UTF-8 Encoding and line delimiters</b>
+	<b>Step 4: Setting UTF-8 Encoding and line delimiters</b>
 	
 		<br><p>In order to improve compatibility with different Operating Systems and their default settings for text encoding and line delimiters, you need to change your default Eclipse Settings to UTF-8 and Unix line delimiters.</p> 
 		<p><img  src="images/utf-8-setting.png" ></p>
