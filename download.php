@@ -18,26 +18,6 @@
 <p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
 <p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
 
-<h3>Release Builds</h3>
-<p>
-
-<p>You can get the the latest release 0.9.3 from this update site:
-
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a></li>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/latest/site.p2.zip</a></li>
-</ul>
-
-<p>An archive of release builds is available here:
-
-<h6>0.8.9</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9</a></li>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9/site.p2.zip</a></li>
-</ul>
-
-A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
-
 <h3>Milestone Builds</h3>
 <p>
 
@@ -93,7 +73,25 @@ To learn how to setup and run EMF Store read the tutorial <a href="http://www.ec
 
 If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
 
+<h3>Release Builds</h3>
+<p>
 
+<p>You can get the the latest release 0.9.3 from this update site:
+
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a></li>
+<li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/latest/site.p2.zip</a></li>
+</ul>
+
+<p>An archive of release builds is available here:
+
+<h6>0.8.9</h6>
+<ul>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9</a></li>
+<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9/site.p2.zip</a></li>
+</ul>
+
+A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
 
 
 </div>
