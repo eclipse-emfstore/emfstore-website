@@ -31,8 +31,8 @@
 
 <h6>1.0.0.RC1</h6>
 <ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/latest">http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/latest/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1/site.p2.zip</a></li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1">http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1</a></li>
+<li><a href="http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/1.0.0RC1/site.p2.zip</a></li>
 </ul>
 
 <p>A list of archived milestone builds is available here
