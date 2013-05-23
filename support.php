@@ -17,9 +17,6 @@
 <ul>
 <li><b><a href="gettingstarted.php"
 		title="Getting Started">Getting Started</a></b> - first steps with EMFStore</li>
-	<li><b><a href="http://code.google.com/p/unicase/wiki/EMFStoreDocumentation"
-		title="Documentation">Documentation</a></b> - read about
-	the details </li>
 	<li><b><a
 		href="http://www.eclipse.org/forums/index.php/f/19/"
 		title="http://www.eclipse.org/forums/index.php/f/19/"
@@ -29,9 +26,28 @@
 		title="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMFT.emf-store"
 		rel="nofollow">File a bug</a></b> - file bugs and feature requests</li>
 </ul>
-<h3>Professional Support</h3>
-<p>Open-source software is free of licensing fees. Furthermore, it is easy to adapt and enhance by new features. Nevertheless, using open-source frameworks is not for free. Like in closed-source software, not everybody is an expert for any framework. The total cost of ownership also includes training, adoption, enhancement and maintainance of a framework. It might take significantly longer for somebody new to the project to extend a certain feature than for the person who introduced it at the first place. Furthermore, software has to be maintained. Even if this can be done literally by everybody for open-source software, a professional maintaiance agreement with fixed response times is often manditory in an industrial setting. This ensures your productivity.
-EclipseSource employs several EMFStore committers and <a href="http://eclipsesource.com/en/eclipse/eclipse-emf/">offers professional support</a> and <a href="http://eclipsesource.com/en/services/eclipse-training/">training</a>.</p>
+<h3><a href="http://eclipsesource.com/en/services/consulting-support/">Professional Support</a></h3>
+<p>
+	Open-source software is free of licensing fees. Furthermore, it is
+	easy to adapt and enhance by new features. Nevertheless, using
+	open-source frameworks is not for free. Like in closed-source
+	software, not everybody is an expert for any framework. The total
+	cost of ownership also includes training, adoption, enhancement and
+	maintainance of a framework. It might take significantly more time for
+	somebody new to the project to extend a certain feature than for the
+	person who is familiar with the framework. Furthermore, software
+	has to be maintained. Even if this can be done literally by
+	everybody for open-source software, a professional maintaiance
+	agreement with fixed response times is often manditory in an
+	industrial setting. This ensures your productivity. EclipseSource
+	employs several EMFStore committers and 
+	<a href="http://eclipsesource.com/en/services/consulting-support/"
+	   target="_blank">offers professional support
+	</a> 
+	and 
+	<a href="http://eclipsesource.com/en/services/training/training-details/eclipse-modeling/"
+	   target="_blank">training
+	</a>.
 </div>
 EOHTML;
 	# Generate the web page
