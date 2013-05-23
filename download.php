@@ -16,7 +16,7 @@
 <div id="midcolumn">
 	<h2>$pageTitle</h2>
 	<p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
-	<p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
+	<p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/junosr2">the latest modeling edition.</a></p>
 
 	<h3>Milestone Builds</h3>
 	<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:</p>
