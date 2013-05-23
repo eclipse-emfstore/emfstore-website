@@ -16,7 +16,7 @@
 <div id="midcolumn">
 <ul>
 <li><b><a href="http://eclipsesource.com/blogs/tutorials/getting-started-with-emfstore/"
-		title="Getting Started">Getting Started</a></b> - first steps with EMFStore</li>
+		title="Getting Started" target="_blank">Getting Started</a></b> - first steps with EMFStore</li>
 	<li><b><a
 		href="http://www.eclipse.org/forums/index.php/f/19/"
 		title="http://www.eclipse.org/forums/index.php/f/19/"
