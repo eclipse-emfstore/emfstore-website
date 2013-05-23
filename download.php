@@ -14,98 +14,18 @@
 
 	$html  = <<<EOHTML
 <div id="midcolumn">
-<h2>$pageTitle</h2>
-<p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
-<p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
+	<h2>$pageTitle</h2>
+	<p>All downloads are provided under the terms and conditions of the <a href="/legal/epl/notice.php">Eclipse Foundation Software User Agreement</a> unless otherwise specified.</p>
+	<p>To install the EMF Store, you need a running Eclipse. The easiest way to get started is to use <a href="http://eclipse.org/downloads/packages/eclipse-modeling-tools/indigor">the latest modeling edition.</a></p>
 
-<h3>Milestone Builds</h3>
-<p>
+	<h3>Milestone Builds</h3>
+	<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:</p>
 
-<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:
-
-<h6>1.0.0.RC3</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC3">http://download.eclipse.org/emf-store/milestones/100RC3</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC3/site.p2.zip">http://download.eclipse.org/emf-store/milestones/100RC3/site.p2.zip</a></li>
-</ul>
-
-<h6>1.0.0.RC2</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC2">http://download.eclipse.org/emf-store/milestones/100RC2</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC2/site.p2.zip">http://download.eclipse.org/emf-store/milestones/100RC2/site.p2.zip</a></li>
-</ul>
-
-<h6>1.0.0.RC1</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC1">http://download.eclipse.org/emf-store/milestones/100RC1</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/100RC1/site.p2.zip">http://download.eclipse.org/emf-store/milestones/100RC1/site.p2.zip</a></li>
-</ul>
-
-<p>A list of archived milestone builds is available here
-		
-<h6>0.9.3.M6</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M6">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M6</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M6/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M6/site.p2.zip</a></li>
-</ul>
-
-<h6>0.9.3.M5</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M5">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M5</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M5/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M5/site.p2.zip</a></li>
-</ul>
-
-<h6>0.9.3.M4</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M4">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M4</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M4/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M4/site.p2.zip</a></li>
-</ul>
-
-<h6>0.9.3.M3</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M3/site.p2.zip</a></li>
-</ul>
-
-<h6>0.9.3.M2</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M2/site.p2.zip</a></li>
-</ul>
-
-<h6>0.9.2.M1</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1</a></li>
-<li><a href="http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip">http://download.eclipse.org/emf-store/milestones/archive/0.9.3.M1/site.p2.zip</a></li>
-</ul>
-
-A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
-
-To learn how to setup and run EMF Store read the tutorial <a href="http://www.eclipse.org/emfstore/documentation/setup.php">here</a>.<br/>
-
-If you have any questions, please do not hesitate <a href="communication.php"> contact us.</a></p>
-
-<h3>Release Builds</h3>
-<p>
-
-<p>You can get the the latest release 0.9.3 from this update site:
-
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest">http://download.eclipse.org/emf-store/releases/latest</a></li>
-<li><a href="http://download.eclipse.org/emf-store/releases/latest/site.p2.zip">http://download.eclipse.org/emf-store/releases/latest/site.p2.zip</a></li>
-</ul>
-
-<p>An archive of release builds is available here:
-
-<h6>0.8.9</h6>
-<ul>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9</a></li>
-<li><a href="http://download.eclipse.org/emf-store/releases/archive/0.8.9">http://download.eclipse.org/emf-store/releases/archive/0.8.9/site.p2.zip</a></li>
-</ul>
-
-A log of new and noteworthy for every release is available <a href="http://wiki.eclipse.org/EMFStore_-_News_and_Noteworthy">here</a>. <br/>
-
-
+	<h6>1.0.0.RC3</h6>
+	<ul>
+		<li><a href="http://download.eclipse.org/emf-store/milestones/100RC3">http://download.eclipse.org/emf-store/milestones/100RC3</a></li>
+		<li><a href="http://download.eclipse.org/emf-store/milestones/100RC3/site.p2.zip">http://download.eclipse.org/emf-store/milestones/100RC3/site.p2.zip</a></li>
+	</ul>
 </div>
 EOHTML;
 	# Generate the web page
