@@ -20,7 +20,11 @@
 
 	<h3>Milestone Builds</h3>
 	<p>Milestone builds reflect the most current development and are not as stable as release builds. You can get the the latest milestone build from this update site or download as zip file:</p>
-
+	<h6>1.0.0.RC4</h6>
+	<ul>
+		<li><a href="http://download.eclipse.org/emf-store/milestones/100RC4">http://download.eclipse.org/emf-store/milestones/100RC4</a></li>
+		<li><a href="http://download.eclipse.org/emf-store/milestones/100RC4/site.p2.zip">http://download.eclipse.org/emf-store/milestones/100RC4/site.p2.zip</a></li>
+	</ul>
 	<h6>1.0.0.RC3</h6>
 	<ul>
 		<li><a href="http://download.eclipse.org/emf-store/milestones/100RC3">http://download.eclipse.org/emf-store/milestones/100RC3</a></li>
