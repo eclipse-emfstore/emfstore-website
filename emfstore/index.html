@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   
+      <title>EMFStore</title>
+      <link rel="stylesheet" media="screen"
+         href="public/stylesheets/bootstrap.css">
+      <link rel="stylesheet" media="screen"
+         href="public/stylesheets/bootstrap-responsive.css">
+           <link rel="stylesheet" media="screen"
+         href="public/stylesheets/theme.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link rel="icon" href="public/images/favicon.ico" />
+      <script src="public/javascripts/jquery-1.9.0.min.js"
+         type="text/javascript"></script>
+      <script src="public/javascripts/bootstrap.js" type="text/javascript"></script>
+      <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+      <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <![endif]--> 
+      <!-- Fav and touch icons --> 
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+      <link rel="shortcut icon" href="../assets/ico/favicon.png">
+   </head>
+   <body>
+      <!-- Part 1: Wrap all page content here --> 
+      <div class="container-fluid" >
+         <!-- Fixed navbar --> 
+         <div class="navbar">
+            <div class="navbar-inner">
+               <div class="container">
+                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span> 
+                  </button> 
+                  <div class="nav-collapse collapse">
+                     <ul class="nav">
+                        <li>
+                        	<a href="index.html">
+                        		<div class="text-center">
+                        			<img src="public/images/home.png" width="16" height="16">
+                        		</div>
+                        		Home
+                        	</a>
+                        </li>
+                        <li>
+                        	<a href="download.html">
+                        		<div class="text-center">
+                        			<img src="public/images/download.png" width="16" height="16">
+                        		</div>
+                        		Download
+							</a>
+						</li>
+                        <li>
+                        	<a href="contact.html">
+                        		<div class="text-center">
+                        			<img src="public/images/contact.png" width="16" height="16">
+                        		</div>
+                        		Contact
+							</a>
+                        </li>
+                         <li>
+                        	<a href="documentation.html">
+                        		<div class="text-center">
+                        			<img src="public/images/documentation.png" width="16" height="16">
+                        		</div>
+                        		Documentation
+							</a>
+                        </li>
+                        <li>
+                        	<a href="support.html">
+                        		<div class="text-center">
+                        			<img src="public/images/support.png" width="16" height="16">
+                        		</div>
+                        		Support
+							</a>
+                        </li>
+                          <li>
+                        	<a href="gettinginvolved.html">
+                        		<div class="text-center">
+                        			<img src="public/images/getting-involved.png" width="16" height="16">
+                        		</div>
+                        		Getting involved
+							</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!--/.nav-collapse --> 
+               </div>
+            </div>
+         </div>
+         <div class="row-fluid no-space">
+            <div class="span3 fill" >
+            	<div class="text-center">
+               		<img src="public/images/logo.png" style="padding-top: 2em;" />
+               		<div class="title">EMFStore</div>
+                </div>
+                <br/>
+                <div class="text-center">
+               		<img class="text-center" src="public/images/egg-incubation.png"  />
+               	</div>
+               	<hr/>
+               <ul>
+               <li>
+                  <a href="http://www.eclipse.org/legal/privacy.php"> Privacy
+                  Policy </a>
+               </li>
+               <li>
+                  <a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of
+                  Use </a>
+               </li>
+               <li>
+                  <a href="http://www.eclipse.org/legal/copyright.php"> Copyright
+                  </a>
+               </li>
+               <li>
+                  <a href="http://www.eclipse.org/legal/"> Legal </a>
+               </li>
+               <li>
+                  <a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-client">About</a>					
+               </li>
+               <li>
+                  <a href="http://www.eclipse.org/">eclipse.org</a>
+               </li>
+               </ul>
+            </div>
+            <div class="span9 content" style="background: #f0f0f0">
+               <div class="row-fluid">
+                  <h3 class="span12 questionBig">What is EMFStore and why should I use it?</h3>
+               </div>
+               <div class="row-fluid">
+                  <p class="span12">
+                     EMFStore is a model repository (server) for EMF featuring collaborative editing and versioning of models. Existing versioning systems such as SVN or GIT are focused on textual artifacts and do not work well for models. The EMFStore is a repository and version control system for the Eclipse Modeling Framework (EMF) designed specifically for models. Instead of versioning the textual serialization of a model, it allows semantic versioning of the model and as a result, supports merging and conflict detection more effectively. The EMFStore server can be applied for EMF Model instances and can be integrated in any kind of existing too
+                  </p>
+               </div>
+               <div class="row-fluid">
+                  <div class="span6">
+                     <div class="question">
+                     	<div id="title">Convention over Configuration</div>
+                        <img class="feature-img" src="public/images/easyconfig.png"/>
+                     </div>
+                     <div class="details-btn">
+                        <a href="#" class="btn btn-inverse">Details</a>
+                     </div>
+                  </div>
+                  <div class="span6">
+                     <div class="question">
+                        <div id="title">Version Models & Data</div>
+                        <img class="feature-img" src="public/images/versioning.png"/>
+                     </div>
+                     <div class="details-btn">
+                        <a href="#" class="btn btn-inverse">Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span6">
+                     <div class="question">
+                     	<div id="title">Collaborate on Models & Data</div>
+                     	<img class="feature-img text-center" src="public/images/collaborate.png"/>
+                     </div>
+                     <div class="details-btn">
+                        <a href="#" class="btn btn-inverse">Details</a>
+                     </div>
+                  </div>
+                  <div class="span6">
+                     <div class="question">
+                     	<div id="title">Extensible Default User Interface</div>
+                     	<img class="feature-img text-center" src="public/images/extensibleui.png"/>
+                     </div>
+                     <div class="details-btn">
+                        <a href="#" class="btn btn-inverse">Details</a>
+                     </div>
+                  </div>
+                  <div class="row-fluid">
+                     <div class="span6">
+                        <div class="question">
+                        	<div id="title">Other Features</div>
+                        	<img class="feature-img text-center" src="public/images/emf_logo2.png"/>
+                     	</div>
+                     	<div class="details-btn">
+                        	<a href="#" class="btn btn-inverse">Details</a>
+                     	</div>
+                     </div>
+                     <div class="span6 text-center">
+                        <a href="#" class="btn btn-primary btn-large">Get started now!</a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <footer class="text-center">
+        &nbsp;<br/>
+      	This site uses icons from <a href="http://www.pyconic.com/">pyconic.com</a>.
+      </footer>
+      </div>
+      &nbsp;
+   </body>
+</html>
