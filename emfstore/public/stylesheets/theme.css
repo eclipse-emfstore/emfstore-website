@@ -10,14 +10,7 @@ html {
          background-image: url('../images/irongrip.png');
          }
          a {
-         color: #fff;
-         text-decoration: none;
-         }
-         .link {
-         	color: #7590ba;
-         }
-         a:visited {
-         color: #494878;
+         color: #7590ba;
          text-decoration: none;
          }
          a:hover {
@@ -164,4 +157,7 @@ html {
          	display: block
          	background-image: url('../images/home.png')
          }
-      
+      .well {
+      	background-color: #1d1d1d;
+      	padding-left: 2em;
+      }
