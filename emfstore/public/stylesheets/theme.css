@@ -9,6 +9,9 @@ html {
          /* The html and body elements cannot have any padding or margin. */
          background-image: url('../images/irongrip.png');
          }
+         .well {
+         	background-color: #333333;
+         }
          a {
          color: #7590ba;
          text-decoration: none;
@@ -21,12 +24,6 @@ html {
          h4 {
          color: #1d1d1d;
          font-size: 1.2em;
-         }
-         .hero-unit {
-         background-image: -webkit-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:    -moz-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:     -ms-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:      -o-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
          }
          a:active,a:hover {
          outline: 0 none;
@@ -47,12 +44,17 @@ html {
          max-width: 65%;
          margin: 0 auto;
          border: thin solid white;
-         background-image: -webkit-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:    -moz-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:     -ms-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-         background-image:      -o-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
+         background-image: -webkit-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
+         background-image:    -moz-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
+         background-image:     -ms-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
+         background-image:      -o-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
          border-bottom-left-radius: 0.6em;
          border-bottom-right-radius: 0.6em;
+         }
+         .twitterbox {
+         background-color: #ffffff;
+         
+         font-color: #1d1d1d;
          }
          /* Lastly, apply responsive CSS fixes as necessary */
          @media ( max-width : 767px) {
@@ -66,14 +68,7 @@ html {
          /* Custom page CSS
          -------------------------------------------------- */
          /* Not required for template or sticky footer method. */
-         .navbar {
-             background-image: -webkit-radial-gradient(top center, ellipse cover, rgba(19, 126, 137,
-         0.5) 0%, rgba(206, 170, 227, 0.5) 100% );
-  .navbar-inner {
-    background-image: -webkit-radial-gradient(top center, ellipse cover, rgba(19, 126, 137,
-         0.5) 50%, rgba(206, 170, 227, 0.5) 100% );
-  }
-}
+         
 	footer {
 		font-size: 0.75em;
 	}
@@ -81,23 +76,24 @@ html {
 		padding: 2em;
 	}
 		.title {
-			font-size: 1.5em;
+			font-size: 2em;
 			font-weight: bold;
 			text-decoration: none;
             text-shadow: 0 0 20px #ffffff;
 		}
+		.modal-header {background-color: #d1d3e8;}
          .container .credit {
          margin: 20px 0;
          }
          .content {
          max-width: 1100px;
-         margin: 0 auto;
+         margin: 0 auto;	
          padding: 2em 3em 3em 3em;
          border-top-left-radius: 0.6em;
          box-shadow: 6px 6px 6px #000;
          }
-         #push,#footer {
-         height: 60px;
+         #footer {
+         margin-top: 1em;
          }
          .question {
          /*text-shadow: 0 0 10px #ffffff;*/
@@ -120,8 +116,8 @@ html {
          }
        
 .navbar-inner {
-  background-color: #595959; /* background color will be black for all browsers */
-  background-image: url('../images/dark_mosaic.png');
+  background-color: #000000; /* background color will be black for all browsers */
+  
   background-repeat: repeat-x;
   filter: none;
   border-radius: 0;
@@ -138,7 +134,7 @@ html {
 }
 .navbar .nav > li > a{
   text-shadow: black 0.1em 0.1em 0.2em;
-  color: #ffffff;
+  color: #000000;
 }
          .questionBig {
          /*text-shadow: 0 0 10px #ffffff;*/
