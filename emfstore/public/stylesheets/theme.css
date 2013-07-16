@@ -1,19 +1,12 @@
 html {
 	height: 100%;        
 }
-
 body {
 	font-family: 'Open Sans', sans-serif;
     height: 100%;
     margin: 0;
     /* The html and body elements cannot have any padding or margin. */
-    background-image: url('../images/irongrip.png');
-}
-
-.description {
-	padding: 1em 3em 0em 3em;
-	font-size: 1.3em;
-	line-height: 2em;
+    background-image: url('../images/irongrip.jpg');
 }
 #footer a {
 	color: #7e7c7c;
@@ -22,33 +15,28 @@ a {
 	color: #8352b4;
     text-decoration: none;
 }
-         a:hover {
-         color: #b3648f;
-         text-decoration: none;
-         text-shadow: 0 0 10px #fdf9ac;
-         }
-         h4 {
-         color: #1d1d1d;
-         font-size: 1.2em;
-         }
-         a:active,a:hover {
-         outline: 0 none;
-         }
-         .span4 {
-         padding: 1em;
-         }
-         p {
-         padding: 5px 15px 5px 15px;
-         line-height: 1.75em;
-         }
-         ul {
-         list-style-type:square;
-         }
-         ul li {line-height:1.75em;}
-         .desc {
-         line-height: 1.5em;
-         }
-
+a:hover {
+	color: #b3648f;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fdf9ac;
+}
+h4 {
+	color: #1d1d1d;
+    font-size: 1.2em;
+}
+a:active,a:hover {
+	outline: 0 none;
+}
+.span4 {
+	padding: 1em;
+}
+p {
+	padding: 5px 15px 5px 15px;
+    line-height: 1.75em;
+}
+ul {
+	list-style-type:square;
+}
 .wrap {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -107,7 +95,7 @@ a {
 	}
 	
 #footer {
-	background-image: url('../images/pinstriped_suit.png');
+	background-image: url('../images/pinstriped_suit.jpg');
 	border: thin solid #5a5454;
     border-bottom-right-radius: 0.6em;
 	border-bottom-left-radius: 0.6em;
@@ -125,39 +113,34 @@ a {
 	text-decoration: none;
     text-shadow: 0 0 20px #ffffff;
 }
-
 .modal-header {
-	background-image: url('../images/irongrip.png');
+	background-image: url('../images/irongrip.jpg');
 }
 .modal-header h3 {
   margin: 0;
   color: #ffffff;
   line-height: 30px;
 }
-
-
 .container .credit {
 	margin: 20px 0;
 }
-         
-         .content {
-         max-width: 1100px;
- 		display:table-row;
-         
-         margin: 0 auto;
-         border-top-left-radius: 0.6em;
-         box-shadow: 6px 6px 6px #000;
-         }
+.content {
+	max-width: 1100px;
+ 	display:table-row;
+    margin: 0 auto;
+    border-top-left-radius: 0.6em;
+    box-shadow: 6px 6px 6px #000;
+}         
 .section-content {
 	padding: 1em 2em 2em 2em;
 }
-         .question {
-         /*text-shadow: 0 0 10px #ffffff;*/
-         border-top-left-radius: 0.6em;
-         text-align: center;	
-         box-sizing: border-box; 
-         box-shadow: 6px 6px 6px #888;
-         }
+.question {
+	/*text-shadow: 0 0 10px #ffffff;*/
+    border-top-left-radius: 0.6em;
+    text-align: center;	
+    box-sizing: border-box; 
+	box-shadow: 6px 6px 6px #888;
+}
 #title {
 	color: #;
     font-size: 2em;
@@ -166,13 +149,13 @@ a {
     padding-top: 0.5em;
     border-top-left-radius: 0.3em;
 }
-         .question #title {
-         color: #ffffff;
-         font-size: 1.2em;
-         padding: 0.3em;
-         border-top-left-radius: 0.6em;
-         background-image: url('../images/dark_mosaic.png');
-         }
+.question #title {
+	color: #ffffff;
+    font-size: 1.2em;
+    padding: 0.3em;
+    border-top-left-radius: 0.6em;
+    background-image: url('../images/dark_mosaic.png');
+}
          .details-btn {
          	text-align: center;
          	padding-top: 1em;
@@ -180,7 +163,7 @@ a {
          }
 
 .navbar-inner {
-	background-image: url('../images/pinstriped_suit.png');
+	background-image: url('../images/pinstriped_suit.jpg');
 	background-repeat: repeat;
 	filter: none;
 	border-radius: 0;
