@@ -8,6 +8,29 @@ body {
     /* The html and body elements cannot have any padding or margin. */
     background-image: url('../images/irongrip.jpg');
 }
+h4 {
+	color: #1d1d1d;
+    font-size: 1.2em;
+}
+p {
+	padding: 5px 15px 5px 15px;
+    line-height: 1.75em;
+}
+ul {
+	list-style-type:square;
+}
+#footer {
+	background-image: url('../images/pinstriped_suit.jpg');
+	border: thin solid #5a5454;
+    border-bottom-right-radius: 0.6em;
+	border-bottom-left-radius: 0.6em;
+	box-sizing: border-box;
+	font-size: 0.75em;
+	-moz-box-sizing: border-box;
+	height: 60px;
+	margin: 0 auto;
+    max-width: 65%;
+}
 #footer a {
 	color: #7e7c7c;
 }
@@ -20,22 +43,11 @@ a:hover {
     text-decoration: none;
     text-shadow: 0 0 10px #fdf9ac;
 }
-h4 {
-	color: #1d1d1d;
-    font-size: 1.2em;
-}
 a:active,a:hover {
 	outline: 0 none;
 }
 .span4 {
 	padding: 1em;
-}
-p {
-	padding: 5px 15px 5px 15px;
-    line-height: 1.75em;
-}
-ul {
-	list-style-type:square;
 }
 .wrap {
 	box-sizing: border-box;
@@ -53,24 +65,21 @@ ul {
     border-radius: 0.6em;
     padding: 1em;
 }
-         
-         
-         .container-fluid {
-         /*display: table;*/
-         position: relative;
-         background-image:     -ms-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
-         background-image:      -o-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
-         border-bottom-left-radius: 0.6em;
-         border-bottom-right-radius: 0.6em;
-         padding-left: 0;
-         padding-right: 0;
-         }
-         .twitterbox {
-         background-color: #ffffff;
-         
-         font-color: #1d1d1d;
-         }
-         /* Lastly, apply responsive CSS fixes as necessary */
+.container-fluid {
+	/*display: table;*/
+    position: relative;
+    background-image:     -ms-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
+    background-image:      -o-radial-gradient(top center, ellipse cover, rgba(19, 126, 137, 0.5) 0%, rgba(206, 130, 240, 0.5) 100% );
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    padding-left: 0;
+    padding-right: 0;
+}
+.twitterbox {
+	background-color: #ffffff;
+    font-color: #1d1d1d;
+}
+
 @media ( max-width : 767px) {
 	#footer {
 		margin-top: 1em;
@@ -81,31 +90,15 @@ ul {
 		font-size: 0.75em;
 	}
 }
-         /* Custom page CSS
-         -------------------------------------------------- */
-         /* Not required for template or sticky footer method. */
-	.span6 {
-		padding: 2em;
-	}
-	#push {
-	height: 60px;
-	}
-	.wrap > .container-fluid {
-		padding-top: 80px;
-	}
-	
-#footer {
-	background-image: url('../images/pinstriped_suit.jpg');
-	border: thin solid #5a5454;
-    border-bottom-right-radius: 0.6em;
-	border-bottom-left-radius: 0.6em;
-	box-sizing: border-box;
-	font-size: 0.75em;
-	-moz-box-sizing: border-box;
-	height: 60px;
-	margin: 0 auto;
-    max-width: 65%;
+.span6 {
+	padding: 2em;
 }
+#push {
+	height: 60px;
+}
+.wrap > .container-fluid {
+	padding-top: 80px;
+}	
 
 .title {
 	font-size: 1.5em;
@@ -156,12 +149,11 @@ ul {
     border-top-left-radius: 0.6em;
     background-image: url('../images/dark_mosaic.png');
 }
-         .details-btn {
-         	text-align: center;
-         	padding-top: 1em;
-         	padding-bottom: 1em;
-         }
-
+.details-btn {
+	text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 .navbar-inner {
 	background-image: url('../images/pinstriped_suit.jpg');
 	background-repeat: repeat;
@@ -170,7 +162,6 @@ ul {
 	text-align:center;
 	border: thin solid #5a5454;
 }
-
 .navbar .nav,
 .navbar .nav > li {
 	float:none;
@@ -179,17 +170,14 @@ ul {
   	*zoom:1; /* hasLayout ie7 trigger */
   	vertical-align: top;
 }
-
-.navbar .nav > li > a{
+.navbar .nav > li > a {
 	text-shadow: none;
-  	color: #7e7c7c;
+  	color: #fff;
 }
-
 .navbar .nav > .active {
   text-shadow: white 0.1em 0.1em 0.2em;
   color: #123456;
 }
-
 .navbar .nav > li > a:hover {
   text-shadow: white 0 0 0.65em;
   color: #ffffff;
@@ -204,14 +192,13 @@ ul {
 	font-size: 1.5em;
 	font-weight: bold;
 }
-         code {
-         font-size: 80%;	
-         }
-         
-         .icon-home {
-         	display: block
-         	background-image: url('../images/home.png')
-         }
-      .no-space [class*="span"] {
+ code {
+	font-size: 80%;	
+}
+.icon-home {
+	display: block
+    background-image: url('../images/home.png')
+}
+.no-space [class*="span"] {
     margin-left: 0;
 }

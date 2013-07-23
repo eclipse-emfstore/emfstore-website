@@ -13,7 +13,11 @@
              <li {{#ifCond active "home"}} class="active" {{/ifCond}}>
                <a href="index.html">
                  <div class="text-center">
-                   <img src="public/images/home.png" width="16" height="16">
+                 {{#ifCond active "home"}}  
+              	    <img src="public/images/home-active.png" width="16" height="16"/>
+              	  {{else}}
+              	    <img src="public/images/home.png" width="16" height="16"/>
+                  {{/ifCond}}
                  </div>
                  Home
                </a>
@@ -21,7 +25,11 @@
              <li {{#ifCond active "gettingstarted"}} class="active" {{/ifCond}}>
                <a href="gettingstarted.html">
                  <div class="text-center">
-                   <img src="public/images/getting-started.png" width="16" height="16">
+                  {{#ifCond active "gettingstarted"}}  
+              	    <img src="public/images/getting-started-active.png" width="16" height="16"/>
+              	  {{else}}
+              	    <img src="public/images/getting-started.png" width="16" height="16"/>
+                  {{/ifCond}}
                  </div>
                  Getting Started
                </a>
@@ -29,7 +37,11 @@
              <li {{#ifCond active "download"}} class="active" {{/ifCond}}>
               <a href="download.html">
                <div class="text-center">
-                <img src="public/images/download.png" width="16" height="16">
+                {{#ifCond active "download"}}  
+              	  <img src="public/images/download-active.png" width="16" height="16"/>
+              	{{else}}
+              	  <img src="public/images/download.png" width="16" height="16"/>
+                {{/ifCond}}
               </div>
               Download
             </a>
@@ -37,7 +49,11 @@
           <li {{#ifCond active "contact"}} class="active" {{/ifCond}}>
             <a href="contact.html">
              <div class="text-center">
-              <img src="public/images/contact.png" width="16" height="16">
+              {{#ifCond active "contact"}}  
+              	<img src="public/images/contact-active.png" width="16" height="16"/>
+              	{{else}}
+              	<img src="public/images/contact.png" width="16" height="16"/>
+              {{/ifCond}}
             </div>
             Contact
           </a>
@@ -45,7 +61,11 @@
         <li {{#ifCond active "documentation"}} class="active" {{/ifCond}}>
           <a href="documentation.html">
            <div class="text-center">
-            <img src="public/images/documentation.png" width="16" height="16">
+            {{#ifCond active "documentation"}}  
+         	  <img src="public/images/documentation-active.png" width="16" height="16"/>
+            {{else}}
+              <img src="public/images/documentation.png" width="16" height="16"/>
+            {{/ifCond}}
           </div>
           Documentation
         </a>
@@ -53,7 +73,11 @@
       <li {{#ifCond active "support"}} class="active" {{/ifCond}}>
         <a href="support.html">
          <div class="text-center">
-          <img src="public/images/support.png" width="16" height="16">
+           {{#ifCond active "support"}}  
+         	<img src="public/images/support-active.png" width="16" height="16"/>
+           {{else}}
+            <img src="public/images/support.png" width="16" height="16"/>
+           {{/ifCond}}
         </div>
         Support
       </a>
@@ -61,7 +85,11 @@
     <li {{#ifCond active "getting-involved"}} class="active" {{/ifCond}}>
       <a href="gettinginvolved.html">
        <div class="text-center">
-        <img src="public/images/getting-involved.png" width="16" height="16">
+         {{#ifCond active "getting-involved"}}  
+         	<img src="public/images/getting-involved-active.png" width="16" height="16"/>
+         {{else}}
+            <img src="public/images/getting-involved.png" width="16" height="16"/>
+         {{/ifCond}}
       </div>
       Getting involved
     </a>
@@ -79,8 +107,6 @@
   <img src="public/images/logo.png" style="padding-top: 2em;" />
   <div class="title" style="color: #ffffff">EMFStore</div>
   <div style="line-height: 150%">&nbsp;</div>
-  <img src="public/images/egg-incubation.png" height="90px" width="60px"  />
-  <div style="color: #a0a092">Eclipse Incubation Project</div>
   <div style="line-height: 400%">&nbsp;</div>
   <a class="twitter-timeline" href="https://twitter.com/search?q=emfstore" data-widget-id="347387182199226369">Tweets about "emfstore"</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
