@@ -1,0 +1,129 @@
+<div class="wrap">
+	<div class="container-fluid" >
+   <div class="navbar  navbar-fixed-top">
+     <div class="navbar-inner">
+       <div class="container">
+         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+           <span class="icon-bar"></span> 
+           <span class="icon-bar"></span> 
+           <span class="icon-bar"></span> 
+         </button> 
+         <div class="nav-collapse collapse">
+           <ul class="nav">
+             <li {{#ifCond active "home"}} class="active" {{/ifCond}}>
+               <a href="index.html">
+                 <div class="text-center">
+                 {{#ifCond active "home"}}  
+              	    <img src="public/images/home-active.png" width="16" height="16"/>
+              	  {{else}}
+              	    <img src="public/images/home.png" width="16" height="16"/>
+                  {{/ifCond}}
+                 </div>
+                 Home
+               </a>
+             </li>
+             <li {{#ifCond active "gettingstarted"}} class="active" {{/ifCond}}>
+               <a href="gettingstarted.html">
+                 <div class="text-center">
+                  {{#ifCond active "gettingstarted"}}  
+              	    <img src="public/images/getting-started-active.png" width="16" height="16"/>
+              	  {{else}}
+              	    <img src="public/images/getting-started.png" width="16" height="16"/>
+                  {{/ifCond}}
+                 </div>
+                 Getting Started
+               </a>
+             </li>
+             <li {{#ifCond active "download"}} class="active" {{/ifCond}}>
+              <a href="download.html">
+               <div class="text-center">
+                {{#ifCond active "download"}}  
+              	  <img src="public/images/download-active.png" width="16" height="16"/>
+              	{{else}}
+              	  <img src="public/images/download.png" width="16" height="16"/>
+                {{/ifCond}}
+              </div>
+              Download
+            </a>
+          </li>
+          <li {{#ifCond active "contact"}} class="active" {{/ifCond}}>
+            <a href="contact.html">
+             <div class="text-center">
+              {{#ifCond active "contact"}}  
+              	<img src="public/images/contact-active.png" width="16" height="16"/>
+              	{{else}}
+              	<img src="public/images/contact.png" width="16" height="16"/>
+              {{/ifCond}}
+            </div>
+            Contact
+          </a>
+        </li>
+        <li {{#ifCond active "documentation"}} class="active" {{/ifCond}}>
+          <a href="documentation.html">
+           <div class="text-center">
+            {{#ifCond active "documentation"}}  
+         	  <img src="public/images/documentation-active.png" width="16" height="16"/>
+            {{else}}
+              <img src="public/images/documentation.png" width="16" height="16"/>
+            {{/ifCond}}
+          </div>
+          Documentation
+        </a>
+      </li>
+      <li {{#ifCond active "support"}} class="active" {{/ifCond}}>
+        <a href="support.html">
+         <div class="text-center">
+           {{#ifCond active "support"}}  
+         	<img src="public/images/support-active.png" width="16" height="16"/>
+           {{else}}
+            <img src="public/images/support.png" width="16" height="16"/>
+           {{/ifCond}}
+        </div>
+        Support
+      </a>
+    </li>
+    <li {{#ifCond active "getting-involved"}} class="active" {{/ifCond}}>
+      <a href="gettinginvolved.html">
+       <div class="text-center">
+         {{#ifCond active "getting-involved"}}  
+         	<img src="public/images/getting-involved-active.png" width="16" height="16"/>
+         {{else}}
+            <img src="public/images/getting-involved.png" width="16" height="16"/>
+         {{/ifCond}}
+      </div>
+      Getting involved
+    </a>
+  </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid" class="no-space">
+ <div class="span9 content" style="background: #f0f0f0; margin: 0 auto" >
+   {{{content}}}
+ </div>
+ <div class="span3 text-center" style="background-color:rgba(30,30,30,0.5); border-radius: 0.6em;" >
+  <img src="public/images/logo.png" style="padding-top: 2em;" />
+  <div class="title" style="color: #ffffff">EMFStore</div>
+  <div style="line-height: 150%">&nbsp;</div>
+  <div style="line-height: 400%">&nbsp;</div>
+  <a class="twitter-timeline" href="https://twitter.com/search?q=emfstore" data-widget-id="347387182199226369">Tweets about "emfstore"</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+</div>
+<div id="push"></div>
+</div>
+<div id="footer" class="text-center">
+	<div class="container-fluid">
+    <a href="http://www.eclipse.org/legal/copyright.php"> Copyright</a>
+    | <a href="http://www.eclipse.org/legal/"> Legal </a>
+    | <a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emft.emf-store">About</a>					
+    | <a href="http://www.eclipse.org/">eclipse.org</a>
+    | <a href="http://www.eclipse.org/legal/privacy.php"> Privacy Policy </a>
+    | <a href="http://www.eclipse.org/legal/termsofuse.php"> Terms of Use </a>
+    <br/>
+    <span style="color: #dcdcdc">This site uses icons from</span> <a href="http://www.pyconic.com/">pyconic.com</a>.
+  </div>
+</div>

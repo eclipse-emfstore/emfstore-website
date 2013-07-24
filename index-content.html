@@ -1,0 +1,225 @@
+ <div class="row-fluid">
+	<div class="span12 titleBig">What is EMFStore and why should I use it?</div>
+</div>
+<div class="row-fluid">
+	<div class="text-center">
+		<img width="65%" src="public/images/client-server2.png"/>
+	</div> 
+	<p class="span12">
+    	EMFStore is a model repository for the Eclipse Modeling Framework (EMF) and features collaborative editing and versioning of models. 
+    	Existing versioning systems such as git or SVN are focused on textual artifacts and do not work well for models. 
+    	EMFStore is specifically designed for models and allows semantic versioning of models. As a result, it supports merging 
+    	and conflict detection more effectively. EMFStore can be used for EMF Model instances and can be integrated into any kind of existing application too.
+	</p>
+</div>
+<div class="row-fluid">
+	<div class="span6">
+    	<div class="question">
+        	<div id="title">Collaborate on Models &amp; Data</div>
+            	<img class="feature-img text-center" src="public/images/collaborate.png"/>
+            </div>
+			<div class="details-btn">
+            	<a href="#collaboration" class="btn btn-inverse" role="button" data-toggle="modal">Details</a>
+			</div>
+					<div id="collaboration" class="modal hide fade" tabindex="-1"
+					   	 role="dialog" aria-labelledby="collaborationLabel"
+						 aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="oneClickLabel">Collaborate on Models &amp Data</h3>
+									</div>
+									<div class="modal-body">
+									Features:
+									<ul>
+										<li>Synchronization with Server</li>
+    									<li>Conflict Detection of Concurrent Changes</li>
+    									<li>Interactive Merging</li>
+    									<li>Authentication and Authorization</li>
+    									<li>Offline Capability</li>
+									</ul>
+<p>
+For many applications, it is important to allow users to collaborate on their models/data. Multiple users will view and make changes to the same models/data. This requires synchronization.
+EMFStore features offline collaboration similar to well-known source code versioning systems such as SVN.  In contrast to using SVN or git to share your models/data serialized to files (e.g., XML), you can use EMFStore to share and checkout models/data as well as commit and update changes to your models/data.  EMFStore understands your models/data and its structure and, therefore, can support conflict detection and interactive merging on a model level as opposed to on a textual level. Invalid XML files after merging or dangling links can never happen when merging with EMFStore.
+</p>
+<p>
+Of course, EMFStore allows you to assign permissions for users to your models/data. Users are authenticated by LDAP and authorized based on permissions.
+Everything from conflict detection over merging to authentication and authorization is, of course, extensible and customizable.
+</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
+                  </div>
+                  <div class="span6">
+                     <div class="question">
+                        <div id="title">Version Models &amp; Data</div>
+                        <img class="feature-img" src="public/images/versioning.png"/>
+                     </div>
+                     <div class="details-btn">
+                     	<a href="#versioning" class="btn btn-inverse" role="button" data-toggle="modal">Details</a>
+                     </div>
+                     
+                     <div id="versioning" class="modal hide fade" tabindex="-1"
+					   	 role="dialog" aria-labelledby="versioningLabel"
+						 aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="versioningLabel">Version Models &amp Data</h3>
+									</div>
+									<div class="modal-body">
+									Features:
+									<ul>
+										<li>Fine-grained History</li>
+    									<li>Differencing/Comparison</li>
+    									<li>Branching</li>
+    									<li>Tagging</li>
+									</ul>
+									<p>
+									Versioning allows you to retrieve any state of your models/data that was ever stored on the EMFStore server at any point in time. The history of your models/data features a fine-grained change log on an attribute change level. To compare different models/data states, the differences can be retrieved and displayed by EMFStore clients.
+</p>
+<p>
+Additionally, EMFStore supports tagging to mark special versions and branching to allow concurrent development of your models/data. Changes can be merged both upstream and downstream in branches.
+</p>
+<p>
+The history of your models/data, including branches, is visualized by the EMFStore history browser; see Extensible Default User Interface for details.
+</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
+                  </div>
+                     
+                     </div>
+               <div class="row-fluid">
+                  <div class="span6">
+                     <div class="question">
+                     	<div id="title">Extensible Default User Interface</div>
+                     	<img class="feature-img text-center" src="public/images/extensibleui.jpg"/>
+                     </div>
+                      <div class="details-btn">
+                     	<a href="#extensibility" class="btn btn-inverse" role="button" data-toggle="modal">Details</a>
+                     </div>
+                     <div id="extensibility" class="modal hide fade" tabindex="-1"
+					   	 role="dialog" aria-labelledby="extensibilityLabel"
+						 aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="extensibilityLabel">Extensiblity Default User Interface</h3>
+									</div>
+									<div class="modal-body">
+									Features:
+									<ul>
+										<li>Navigator and Editor (EMF Client Platform Integration)</li>
+    									<li>History View</li>
+    									<li>Synchronization and Merge UI</li>
+    									<li>Repository Browser (EMF Client Platform integration)</li>
+									</ul>
+									<p>
+									In addition to applying the convention-over-configuration paradigm, EMFStore features a default user interface for viewing and editing models and for synchronizing models with the server.
+
+With the repository browser (integrated from EMF Client Platform), you can configure servers your client can connect to and log in to the servers. A navigator view allows you to view all your models/data in your client’s workspace, and a reflective editor allows you to view and modify single models/data elements. (Both are featured by EMF Client Platform.)
+</p>
+<p>
+To visualize synchronization with the server, there are default dialogs to share and check out models/data as well as dialogs for committing and updating models/data. If a conflict is detected, your models/data can be interactively merged with a default merge dialog.
+</p>
+<p>
+Finally, you can view the history of all your models/data or of selected models/data elements in a history view. The view also allows you to see branches and tags and the changes between versions.
+</p>
+<p>
+All dialogs can be extended, customized and replaced as required.
+</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
+                   
+                   
+                  </div>
+                   <div class="span6">
+                       <div class="question">
+                     	<div id="title">Convention over Configuration</div>
+                        <img class="feature-img" src="public/images/easyconfig.png"/>
+                     </div>
+                      <div class="details-btn">
+                     	<a href="#conventions" class="btn btn-inverse" role="button" data-toggle="modal">Details</a>
+                     </div>
+                     <div id="conventions" class="modal hide fade" tabindex="-1"
+					   	 role="dialog" aria-labelledby="conventionsLabel"
+						 aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="conventsionsLabel">Convention over Configuration</h3>
+									</div>
+									<div class="modal-body">
+									Features:
+									<ul>
+										<li>Zero Setup</li>
+    									<li>Overridable Defaults for Everything </li>
+    									<li>Default User Interface</li>
+									</ul>
+									<p>
+									EMFStore embraces the convention-over-configuration paradigm. From server port to conflict detection, there are default values and implementations for every configuration option. This means that you have to do zero configuration and implementation to get started with EMFStore. You can still configure everything, of course, if you decide later that your EMFStore configuration should differ from the default.
+</p>
+<p>
+The convention-over-configuration paradigm even extends to the user interface. No need to provide any kind of visualization by yourself. EMFStore features a reflective user interface to display and modify your models/data and to synchronize your UI with the EMFStore server. See Extensible Default User Interface for details.
+</p>
+<p>
+In conclusion, convention-over-configuration for EMFStore means that all you need to do to get EMFStore up and running is to provide your data definition, a.k.a. your Ecore model.
+</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
+                  </div>
+                </div>
+                <div class="row-fluid">
+                     <div class="span6">
+                        <div class="question">
+                        	<div id="title">Other Features</div>
+                        	<img class="feature-img text-center" src="public/images/emf_logo.png"/>
+                     	</div>
+                     	 <div class="details-btn">
+                     	<a href="#otherFeatures" class="btn btn-inverse" role="button" data-toggle="modal">Details</a>
+                     </div>
+                     <div id="otherFeatures" class="modal hide fade" tabindex="-1"
+					   	 role="dialog" aria-labelledby="#otherFeaturesLabel"
+						 aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">x</button>
+										<h3 id="#otherFeaturesLabel">Other features</h3>
+									</div>
+									<div class="modal-body">
+									Features:
+									<ul>
+										<li>Models/Data Migration (Edapt Integration)</li>
+    									<li>File Support </li>
+    									<li>Transaction Support (Transaction Editing Domain Integration)</li>
+									</ul>
+									<p>
+									EMFStore also provides some other features we found useful when working with models.
+
+The EMFStore integration with Edapt allows you to migrate your existing models/data if your data definition/Ecore changes. EMFStore will migrate client and server data as required.
+
+Alongside models/data, you can also upload files to the EMFStore server. This is often useful if you have additional data such as images or other non-structured/non-model content.
+
+To support transactional behavior, EMFStore provides integration with the EMF transactional editing domain.
+</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn" data-dismiss="modal" aria-hidden="true">Ok</button>
+									</div>
+								</div>
+                     </div>
+                     <div class="span6 text-center">
+                        <a href="gettingstarted.html" class="btn btn-primary btn-large">Get started now!</a> 
+                     </div>
+               </div>
