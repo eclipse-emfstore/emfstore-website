@@ -121,6 +121,18 @@
 					</p>
 				</li>
 			</ul>
+			<h4>Framework Developer Documentation</h4>
+				<p>We keep this information in our <a class="link" href="http://wiki.eclipse.org/EMFStoreDevelopers">developer wiki</a>.</p>
+				
+			<h4>Branching scheme</h4>
+					<p>In our GIT Repositories we are using the branching scheme described <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.</p>
+				
+					<p>We have a master branch containing the last release. A development branch containing the current development state and (hopefully) some feature branches containing new feature developments.</p>
+				
+					<p>So if you are a developer please commit on the develop branch in the future. If you develop a new feature please open a feature branch and merge it back to the develop branch when your feature is finished. Don't commit on the master branch as it should only contain stable release versions merged there by the release engineer.</p>
+				
+					<img alt="Branching Scheme" src="public/images/branchStrategy.png" height="452" width="355"/>
+				
 			<h4>Profiling and Performance Debugging</h4>
 			YourKit is kindly supporting the EMFStore open source project with its full-featured 
 			<a target="_blank" href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a>, which helped us to greatly improve EMFStore.
