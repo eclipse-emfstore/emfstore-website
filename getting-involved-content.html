@@ -39,13 +39,18 @@
 						Please use the Eclipse Modeling Tools from the <a href="http://www.eclipse.org/downloads" target="_blank">Eclipse downloads</a> section.
 						Refer to the <a href="http://wiki.eclipse.org/Plugin/Feature_Configuration_Guidelines" target="_blank">Plugin/Feature Configuration Guidelines</a> on how to setup your preferences. 
 					</p></li>
-				<li><b>Step 2: Additional Plug-Ins</b>
+				<li><b>Step 2: Additional Plug-Ins and Settings</b>
 					<p>
 						Install Checkstyle Plug-In from either the Marketplace
-						(Help-&gt;Eclipse Marketplace...) or from the 
+						(Help-&gt;Eclipse Marketplace...) or from the
 						<a href="http://eclipse-cs.sf.net/update/"
 						   target="_blank">
-							Checkstyle Updatesite</a>.
+						   Checkstyle Updatesite
+						</a>. All projects have a project specific checkstyle setting, so no need to set this.
+					</p>
+					<p>Set the API baseline to the latest release. For this you need to download the release as a zip file and create a new baseline using Preferences => Plug-In Development => API Baselines.</p>
+					<p>All bundle contain bundle specific settings for formater, warnings and so on, so you don't need to set them. If you create a new bundle, please copy the .settings folder from an existing one</p>
+					<p>Install the "API Tools Execution Environment Descriptions" from the Eclipse Project Updates site.	 
 					</p></li>
 				<li><b>Step 3: Check-out the source via git</b>
 					<p>
