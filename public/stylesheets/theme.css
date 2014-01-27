@@ -20,7 +20,8 @@ ul {
 	list-style-type:square;
 }
 #footer {
-	background-image: url('../images/pinstriped_suit.jpg');
+	/*background-image: url('../images/dark_geometric.png');*/
+    background-color: #000000;
 	border: thin solid #5a5454;
     border-bottom-right-radius: 0.6em;
 	border-bottom-left-radius: 0.6em;
@@ -135,7 +136,7 @@ a:active,a:hover {
 	box-shadow: 6px 6px 6px #888;
 }
 #title {
-	color: #;
+	color: black;
     font-size: 2em;
     font-weight: bold;
     padding-left: 1em;
@@ -144,10 +145,11 @@ a:active,a:hover {
 }
 .question #title {
 	color: #ffffff;
+    background-color: #000000;
     font-size: 1.2em;
     padding: 0.3em;
     border-top-left-radius: 0.6em;
-    background-image: url('../images/dark_mosaic.png');
+    /*background-image: url('../images/dark_mosaic.png');*/
 }
 .details-btn {
 	text-align: center;
@@ -155,9 +157,10 @@ a:active,a:hover {
     padding-bottom: 1em;
 }
 .navbar-inner {
-	background-image: url('../images/pinstriped_suit.jpg');
-	background-repeat: repeat;
-	filter: none;
+    background-color: #000; /* background color will be black for all browsers */
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
 	border-radius: 0;
 	text-align:center;
 	border: thin solid #5a5454;
@@ -184,10 +187,11 @@ a:active,a:hover {
 }
 .titleBig {
 	/*text-shadow: 0 0 10px #ffffff;*/
-    padding: 0.3em 0 0 0.3em;
+    padding: 0.5em ;
     color: #ffffff;
+    background-color: #000000;
     border-top-left-radius: 0.3em;
-	background-image: url('../images/dark_mosaic.png');
+	/*background-image: url('../images/dark_mosaic.png');*/
 	margin: 0;
 	font-size: 1.5em;
 	font-weight: bold;
