@@ -108,6 +108,10 @@
 		<li>Why does EMFStore fail with <strong>org.eclipse.emf.ecore.xmi.PackageNotFoundException</strong>: Package with uri 'http://xxx.ecore' not found?</li>
 		<p>This most likely happens because you forgot to add your model plugin to the running/product config of EMFStore.
 			Make sure to always include your model plugin in your running config, otherwise EMFStore is not able to serialize and de-serialize your data.</p>
+		<li>Why do I get an <code>java.lang.ClassNotFoundException</code> for the <code>LoginDialog</code> class?</li>
+		<p>You most likely did not include <code>org.eclipse.emf.emfstore.client.ui.rcp</code> or <code>org.eclipse.emf.emfstore.client.ui.rcp</code>
+			in your running config.
+		</p>
 	</ul>
 </div>			
          
