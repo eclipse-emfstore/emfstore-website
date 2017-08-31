@@ -112,6 +112,12 @@
 		<p>You most likely did not include <code>org.eclipse.emf.emfstore.client.ui.rcp</code> or <code>org.eclipse.emf.emfstore.client.ui.rcp</code>
 			in your running config.
 		</p>
+		<li>Why do I get checksum errors if the client and the server are in different timezones?</li>
+		<p>
+			Because the checksum is computed based on a serialization of the respective project states. In order to sync the
+			client and the server you can pass the <code>user.timezome</code> system property to the application as in
+			<code>-Duser.timezone=MYTIMEZONE</code>.
+		</p>
 	</ul>
 </div>			
          
