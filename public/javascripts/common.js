@@ -18,11 +18,13 @@ function getCookie(name) {
 }
 
 function createTimeline() {
+  var twitterContainer = document.getElementById("twitter-container");
   twttr.widgets.createTimeline(
     "347387182199226369",
-    document.getElementById("twitter-container"),
+    twitterContainer,
     {
       height: 400
     }
   );
+  twitterContainer.innerText = '';
 }
